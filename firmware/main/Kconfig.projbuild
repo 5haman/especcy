@@ -1,0 +1,9 @@
+menu "Speccy bench firmware"
+    config SPECCY_SPI_CLOCK_MHZ
+        int "GC9107 SPI clock (MHz)"
+        range 1 40
+        default 20
+        help
+            Start at 20 MHz. Change only after checking the selected LCD and
+            wiring. Lower clocks can prevent the 25 fps target being met.
+endmenu
