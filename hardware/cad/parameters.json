@@ -1,0 +1,37 @@
+{
+  "name": "Speccy micro / packaging study",
+  "units": "mm",
+  "case": {"width": 24.0, "length": 38.0, "height": 11.6, "overall_height": 12.0, "wall": 1.2, "corner_radius": 3.0, "seam_height": 6.4},
+  "carrier": {"width": 20.8, "length": 34.8, "thickness": 0.8, "x": 1.6, "y": 1.6, "z": 4.8},
+  "esp32": {"part": "ESP32-WROOM-32E-N4", "width": 18.0, "length": 25.5, "height": 3.1, "x": 3.0, "y": 10.1, "z": 1.7, "antenna_length": 6.5},
+  "lcd": {"part": "Waveshare 0.85inch LCD Module / SKU 26117", "controller": "GC9107", "pixels": [128, 128], "board_width": 19.0, "board_length": 22.5, "board_thickness": 0.8, "panel_height": 2.0, "back_component_height": 1.2, "active_width": 15.21, "active_length": 15.21, "x": 2.5, "y": 14.3, "z": 7.3, "active_center_x": 12.0, "active_center_y": 27.05},
+  "buttons": [
+    {"name": "Up", "x": 7.4, "y": 11.5},
+    {"name": "Down", "x": 7.4, "y": 4.5},
+    {"name": "Left", "x": 3.9, "y": 8.0},
+    {"name": "Right", "x": 10.9, "y": 8.0},
+    {"name": "Fire", "x": 18.6, "y": 10.8},
+    {"name": "Menu", "x": 18.0, "y": 5.4}
+  ],
+  "switch": {"width": 3.0, "length": 2.6, "height": 0.65, "z": 5.6},
+  "usb": {"type": "Micro-B / 5 V power only", "width": 7.5, "length": 5.9, "height": 2.5, "x": 8.25, "y": 0.8, "z": 2.3},
+  "reference_devkit": {"pcb_width": 27.94, "pcb_length": 48.26},
+  "sources": [
+    {"url": "https://www.espressif.com/en/products/modules/esp32", "verified": "ESP32-WROOM-32E envelope 18 x 25.5 x 3.1 mm, dual-core 240 MHz, 4 MB flash variant"},
+    {"url": "https://www.waveshare.com/0.85inch-lcd-module.htm", "verified": "LCD carrier footprint 19 x 22.5 mm; active area 15.21 x 15.21 mm; 128 x 128; GC9107; 3.3 V SPI"},
+    {"url": "https://www.waveshare.com/img/devkit/LCD/0.85inch-LCD-Module/0.85inch-LCD-Module-details-size.jpg", "verified": "Manufacturer outline drawing; 22.5 x 19 mm before rotating the assembly"},
+    {"url": "https://dl.espressif.com/dl/schematics/esp32_devkitc_v4_dimensions.pdf", "verified": "48.26 x 27.94 mm reference PCB dimensions, as indexed in the official drawing; reference only"}
+  ],
+  "assumptions": [
+    "Custom double-sided carrier PCB; mechanical layout only, not routed or electrically validated.",
+    "LCD MX1.25 connector is desoldered and replaced with eight short soldered wires to reduce stack height.",
+    "LCD Z dimensions and active-area offset are estimated: verify an actual sample before PCB manufacture or case printing.",
+    "Switch, Micro-B connector, LDO, passive and screw envelopes are generic package estimates, not vendor CAD models.",
+    "USB powers the unit only. External USB-UART programming uses six underside pogo pads (GND, 3V3, TX, RX, EN, BOOT).",
+    "Wi-Fi and Bluetooth remain disabled: the display stack does not preserve the full radio antenna clearance.",
+    "128 x 96 displayed picture represents a 2:1 reduction of the Spectrum 256 x 192 image; BASIC text will be difficult to read.",
+    "Six buttons support game mappings and a menu, not a full Spectrum keyboard.",
+    "ROM and one game snapshot live in flash; this size excludes a battery, SD card, speaker and their circuitry.",
+    "This is a compact feasible-looking packaging target, not a proven absolute minimum or manufacturing-ready design."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "units": "mm",
+  "native_freecad_version": "1.1.4",
+  "invalid_solids": [],
+  "collisions": [],
+  "clearances": {
+    "module_to_case_floor": 0.5,
+    "carrier_to_lcd_pcb": 1.7,
+    "lcd_to_roof": 0.3,
+    "regulator_to_display": 1.055
+  },
+  "part_count": 47,
+  "assembled_envelope_mm": [
+    24.0,
+    38.0,
+    12.0
+  ],
+  "case_wall_mm": 1.2,
+  "button_hole_radial_gap_mm": 0.21,
+  "lcd_window_edge_gap_mm": 0.3,
+  "electrical_validation": "not performed: custom carrier is not routed",
+  "print_validation": "not performed: LCD depths and purchased component packages need measurement",
+  "pass": true
+}

@@ -1,0 +1,43 @@
+{
+  "step_envelope_mm": [
+    24.0,
+    38.0,
+    12.0
+  ],
+  "step_valid": true,
+  "stl_files": {
+    "button_down.stl": {
+      "closed": true,
+      "volume_mm3": 33.541
+    },
+    "button_fire.stl": {
+      "closed": true,
+      "volume_mm3": 33.541
+    },
+    "button_left.stl": {
+      "closed": true,
+      "volume_mm3": 33.541
+    },
+    "button_menu.stl": {
+      "closed": true,
+      "volume_mm3": 33.541
+    },
+    "button_right.stl": {
+      "closed": true,
+      "volume_mm3": 33.541
+    },
+    "button_up.stl": {
+      "closed": true,
+      "volume_mm3": 33.541
+    },
+    "case_base.stl": {
+      "closed": true,
+      "volume_mm3": 1819.792
+    },
+    "case_lid.stl": {
+      "closed": true,
+      "volume_mm3": 1258.261
+    }
+  },
+  "pass": true
+}

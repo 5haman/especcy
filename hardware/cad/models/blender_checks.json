@@ -1,0 +1,14 @@
+{
+  "native_blender_version": "5.2.2 LTS",
+  "components": 47,
+  "scenes": 4,
+  "packed_screen": true,
+  "assembled_envelope_mm": [
+    24.0,
+    38.0,
+    12.0
+  ],
+  "render_previews": 4,
+  "glb_header_valid": true,
+  "pass": true
+}
