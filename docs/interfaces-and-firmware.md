@@ -1,16 +1,16 @@
 # Interfaces and firmware
 
-The repository supplies bench firmware bindings and runtime contracts for original Dizzy on Spectrum 48K. The carrier schematic, final pad pinout and physical validation remain open. Exact build and bench commands are in the [firmware guide](../firmware/README.md).
+The repository supplies bench firmware bindings and runtime contracts for original Dizzy on Spectrum 48K. The [electrical study](../hardware/electronics/README.md) adds carrier/fixture schematics, checked GPIOs and a numbered pogo interface. Routing and physical validation remain open. Software build commands are in the [firmware guide](../firmware/README.md).
 
 ## Interface inventory
 
 | Interface | Established intent | Unresolved contract |
 | --- | --- | --- |
-| Micro-B → carrier | 5 V power only | Connector part, protection, current budget and cable fit |
-| Regulator → components | 3.3 V supply | Regulator, load/transient limits, reset sequencing and thermal budget |
+| Micro-B → carrier | GCT USB3076-30-A; qualified 4.75–5.00 V power only; data/ID NC | Wider source/protection qualification, cable fit and one shell-stake conflict |
+| Regulator → components | TLV75733PDBVR; 3.3 V; EN tied to input | Actual load/transients and continuous thermal capability |
 | ESP32 → LCD | SPI2, mode 0, initially 20 MHz; RGB565; manufacturer initialization and X+2/Y+3 offset | Physical orientation, clock margin and wire routing |
-| Controls → ESP32 | Active low with internal pull-ups; independent 10 ms debounce; Kempston plus isolated menu | Switch part, external circuit and physical input assessment |
-| External programmer → pads | GND, 3V3, TX, RX, EN, BOOT | Pad numbering/orientation, voltage policy and reset circuitry |
+| Controls → ESP32 | TE 2337228-2 to GND; internal pull-ups; 10 ms debounce; Kempston plus isolated menu | Plunger/tolerance fit and physical input assessment |
+| External programmer → pads | 1 GND, 2 sense only, 3 device TX, 4 device RX, 5 EN, 6 BOOT; two gated UART buffers, manual switches | Probe mechanics and all power/flash/recovery bench cases |
 | Flash → runtime | 16 KiB ROM and 49,179-byte 48K SNA embedded in the factory app | Content redistribution rights and physical update/recovery evidence |
 
 ## LCD logical signals
@@ -26,7 +26,7 @@ These names come from W2. They describe the LCD module, not ESP32 GPIO numbers. 
 | CS | Input | Display chip select |
 | DC | Input | Select command or display data |
 | RST | Input | Display reset |
-| BL | Control connection | Backlight control; drive details require the module circuit review |
+| BL | Logic input | Through onboard 1 kΩ to an 8050 backlight transistor; W15 |
 
 “Four-wire SPI” is the product's interface description; the complete module still has eight connections including supply and controls. It does not mean four interconnect wires in this assembly. No LCD MISO/readback connection is listed in W2.
 
@@ -45,11 +45,11 @@ These pins avoid flash, UART0 and boot-strapping pins. This is a bench allocatio
 
 ## Programming interface
 
-The CAD label lists `GND / 3V3 / TX / RX / EN / BOOT`. It is not a released pinout. TX and RX direction must be defined relative to the device before a fixture is built. Device TX normally connects to adapter RX and device RX to adapter TX; verify the implemented nets rather than relying on the labels.
+U3 defines pad numbering in the electrical study: **1 GND, 2 3V3_SENSE, 3 device TX/GPIO1, 4 device RX/GPIO3, 5 EN, 6 BOOT/GPIO0**. With USB at the bottom, pad 1 is left in the underside view and right in the front projection. The fixture's contact-tip view must mirror the underside. Continuity-check mating contacts by number; the old CAD labels alone do not establish this view.
 
-W6 establishes that GPIO0 low during reset selects the serial bootloader, with GPIO2 and other straps also affecting boot. EN corresponds to chip enable/reset behavior described by W4. The project has not wired BOOT to GPIO0 in a schematic or selected an automatic-reset circuit.
+Micro-B powers the handheld. Pad 2 is high-impedance sense only; adapter VCC is disconnected. The fixture uses independent regulated 3.3 V with common ground, a TLV7041 rail monitor and two SN74LVC2G125 buffers. Device TX goes through a buffer to adapter RX; adapter TX goes through the other to device RX. The device rail's absence disables both outputs. Manual BOOT/RESET only pull to ground. EN has 10 kΩ/1 µF; GPIO0 pulls high, GPIO2/GPIO12 low.
 
-The 3V3 pad could be used for supply, sensing or another documented fixture policy; D-007 must select one. Do not treat the label as evidence that USB and adapter supplies can be connected together. Bench flashing uses IDF's standard ESP32 bootloader at `0x1000`, partition table at `0x8000` and factory app at `0x10000`. UART0 TX/RX are GPIO1/GPIO3. The firmware guide describes manual GPIO0/EN recovery; automatic reset depends on the fixture circuit.
+Hold BOOT low, pulse RESET, retain BOOT through the 1 ms strap interval, then use esptool without automatic reset. Release BOOT after connection and pulse RESET after a complete flash. Bench addresses remain bootloader `0x1000`, partitions `0x8000`, app `0x10000`. See the [electrical handoff](../hardware/electronics/README.md) for fixture supply, threshold assumptions and required USB/fixture/adapter powered and unpowered cases. Static checks do not close the flash/recovery gate.
 
 ## Runtime journeys and acceptance boundaries
 

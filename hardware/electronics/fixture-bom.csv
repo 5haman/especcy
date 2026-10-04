@@ -1,0 +1,20 @@
+ref,quantity,value,mpn,manufacturer,footprint,kind,source,note
+J1,1,Handheld contacts,Interface,Fixture fabricator,PogoPads,interface,,Mating view; exact probe mechanics remain open.
+J2,1,3.3V UART adapter,TSW-104-07-G-S,Samtec,Header4,component,https://www.samtec.com/products/tsw,"Logical fixture header, not a universal adapter pinout. Pin 1/VCC intentionally NC."
+J3,1,Fixture local 3.3V,TSW-102-07-G-S,Samtec,Header2,component,https://www.samtec.com/products/tsw,Regulated 3.3V local fixture supply; no connection to SENSE_3V3.
+U1,1,SN74LVC2G125DCUR,SN74LVC2G125DCUR,Texas Instruments,Buffer,component,https://www.ti.com/lit/ds/symlink/sn74lvc2g125.pdf,Both channels gated; Ioff provides partial-power-down protection.
+U2,1,TLV7041DBVR,TLV7041DBVR,Texas Instruments,SOT23_5,component,https://www.ti.com/lit/ds/symlink/tlv7041.pdf,Open drain; inputs tolerate 7V with supply off. Output low only when device rail is present; internal plus external hysteresis.
+D1,1,LM4040A20 / 2.048V,LM4040A20IDBZR,Texas Instruments,SOT23_3,component,https://www.ti.com/lit/ds/symlink/lm4040.pdf,
+R1,1,1k / 1%,RC0603FR-071KL,Yageo,R0603,component,https://www.yageo.com/en/Product/Index/Chip_Resistors,
+R2,1,523k / 1%,RC0402FR-07523KL,Yageo,R0402,component,https://www.yageo.com/en/Product/Index/Chip_Resistors,
+R3,1,1M / 1%,RC0402FR-071ML,Yageo,R0402,component,https://www.yageo.com/en/Product/Index/Chip_Resistors,
+R4,1,10k / 1%,RC0402FR-0710KL,Yageo,R0402,component,https://www.yageo.com/en/Product/Index/Chip_Resistors,
+R5,1,1M / 1%,RC0402FR-071ML,Yageo,R0402,component,https://www.yageo.com/en/Product/Index/Chip_Resistors,
+R6,1,10k / 1%,RC0402FR-0710KL,Yageo,R0402,component,https://www.yageo.com/en/Product/Index/Chip_Resistors,
+R7,1,1k / 1%,RC0603FR-071KL,Yageo,R0603,component,https://www.yageo.com/en/Product/Index/Chip_Resistors,
+R8,1,100k / 1%,RC0402FR-07100KL,Yageo,R0402,component,https://www.yageo.com/en/Product/Index/Chip_Resistors,
+R9,1,100k / 1%,RC0402FR-07100KL,Yageo,R0402,component,https://www.yageo.com/en/Product/Index/Chip_Resistors,
+C1,1,100n / 16V X7R,GRM155R71C104KA88D,Murata,C0402,component,https://www.murata.com/en-global/products/capacitor/mlcc,
+C2,1,100n / 16V X7R,GRM155R71C104KA88D,Murata,C0402,component,https://www.murata.com/en-global/products/capacitor/mlcc,
+SW1,1,BOOT (hold),B3F-1000,Omron,ManualSwitch,component,https://components.omron.com/us-en/products/switches/B3F,
+SW2,1,RESET (pulse),B3F-1000,Omron,ManualSwitch,component,https://components.omron.com/us-en/products/switches/B3F,

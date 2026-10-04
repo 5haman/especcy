@@ -1,0 +1,1 @@
+(fp_lib_table (version 7) (lib (name "Study") (type "KiCad") (uri "${KIPRJMOD}/Study.pretty") (options "") (descr "Project footprint snapshot; see NOTICE")))

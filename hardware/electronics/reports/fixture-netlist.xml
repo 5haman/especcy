@@ -1,0 +1,898 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/Users/shaman/Projects/especcy/hardware/electronics/fixture.kicad_sch</source>
+    <date>2026-10-04T01:43:54</date>
+    <tool>Eeschema 10.0.6</tool>
+    <textvar name="DESIGN_STATUS">UNROUTED STUDY - NOT FOR FABRICATION</textvar>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Especcy manual programming fixture - reference circuit</title>
+        <company>Especcy</company>
+        <rev>A - unrouted study</rev>
+        <date>2026-10-04</date>
+        <source>fixture.kicad_sch</source>
+        <comment number="1" value="Design study; physical acceptance and fabrication release open"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>100n / 16V X7R</value>
+      <footprint>Study:C0402</footprint>
+      <datasheet>https://www.murata.com/en-global/products/capacitor/mlcc</datasheet>
+      <fields>
+        <field name="MPN">GRM155R71C104KA88D</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="Kind">component</field>
+        <field name="Design note"/>
+        <field name="Footprint">Study:C0402</field>
+        <field name="Datasheet">https://www.murata.com/en-global/products/capacitor/mlcc</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Study" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="Kind" value="component"/>
+      <property name="Design note" value=""/>
+      <property name="Sheetname" value="fixture"/>
+      <property name="Sheetfile" value="fixture.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>95c6d37a-baf8-5284-8d0b-bb1120a98cee</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C2">
+      <value>100n / 16V X7R</value>
+      <footprint>Study:C0402</footprint>
+      <datasheet>https://www.murata.com/en-global/products/capacitor/mlcc</datasheet>
+      <fields>
+        <field name="MPN">GRM155R71C104KA88D</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="Kind">component</field>
+        <field name="Design note"/>
+        <field name="Footprint">Study:C0402</field>
+        <field name="Datasheet">https://www.murata.com/en-global/products/capacitor/mlcc</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Study" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM155R71C104KA88D"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="Kind" value="component"/>
+      <property name="Design note" value=""/>
+      <property name="Sheetname" value="fixture"/>
+      <property name="Sheetfile" value="fixture.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>33f0aefb-ed30-555c-ba35-f8fe2bf342b3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D1">
+      <value>LM4040A20 / 2.048V</value>
+      <footprint>Study:SOT23_3</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/lm4040.pdf</datasheet>
+      <fields>
+        <field name="MPN">LM4040A20IDBZR</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="Kind">component</field>
+        <field name="Design note"/>
+        <field name="Footprint">Study:SOT23_3</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/lm4040.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Study" part="Reference" description="2.048V Precision Micropower Shunt Voltage Reference, SOT-23"/>
+      <property name="MPN" value="LM4040A20IDBZR"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="Kind" value="component"/>
+      <property name="Design note" value=""/>
+      <property name="Sheetname" value="fixture"/>
+      <property name="Sheetfile" value="fixture.kicad_sch"/>
+      <property name="ki_keywords" value="diode device voltage reference shunt"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3d106580-5aac-52e6-bada-85b700c8ee68</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J1">
+      <value>Handheld contacts</value>
+      <footprint>Study:PogoPads</footprint>
+      <fields>
+        <field name="MPN">Interface</field>
+        <field name="Manufacturer">Fixture fabricator</field>
+        <field name="Kind">interface</field>
+        <field name="Design note">Mating view; exact probe mechanics remain open.</field>
+        <field name="Footprint">Study:PogoPads</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Study" part="Pogo" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="MPN" value="Interface"/>
+      <property name="Manufacturer" value="Fixture fabricator"/>
+      <property name="Kind" value="interface"/>
+      <property name="Design note" value="Mating view; exact probe mechanics remain open."/>
+      <property name="Sheetname" value="fixture"/>
+      <property name="Sheetfile" value="fixture.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b757fbfe-a520-5f22-baf0-76642f78a01c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J2">
+      <value>3.3V UART adapter</value>
+      <footprint>Study:Header4</footprint>
+      <datasheet>https://www.samtec.com/products/tsw</datasheet>
+      <fields>
+        <field name="MPN">TSW-104-07-G-S</field>
+        <field name="Manufacturer">Samtec</field>
+        <field name="Kind">component</field>
+        <field name="Design note">Logical fixture header, not a universal adapter pinout. Pin 1/VCC intentionally NC.</field>
+        <field name="Footprint">Study:Header4</field>
+        <field name="Datasheet">https://www.samtec.com/products/tsw</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Study" part="Adapter" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="MPN" value="TSW-104-07-G-S"/>
+      <property name="Manufacturer" value="Samtec"/>
+      <property name="Kind" value="component"/>
+      <property name="Design note" value="Logical fixture header, not a universal adapter pinout. Pin 1/VCC intentionally NC."/>
+      <property name="Sheetname" value="fixture"/>
+      <property name="Sheetfile" value="fixture.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>34fef771-025d-5498-82a7-b7188d07bdc7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J3">
+      <value>Fixture local 3.3V</value>
+      <footprint>Study:Header2</footprint>
+      <datasheet>https://www.samtec.com/products/tsw</datasheet>
+      <fields>
+        <field name="MPN">TSW-102-07-G-S</field>
+        <field name="Manufacturer">Samtec</field>
+        <field name="Kind">component</field>
+        <field name="Design note">Regulated 3.3V local fixture supply; no connection to SENSE_3V3.</field>
+        <field name="Footprint">Study:Header2</field>
+        <field name="Datasheet">https://www.samtec.com/products/tsw</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Study" part="PowerPort" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="MPN" value="TSW-102-07-G-S"/>
+      <property name="Manufacturer" value="Samtec"/>
+      <property name="Kind" value="component"/>
+      <property name="Design note" value="Regulated 3.3V local fixture supply; no connection to SENSE_3V3."/>
+      <property name="Sheetname" value="fixture"/>
+      <property name="Sheetfile" value="fixture.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2c352d95-3a14-566c-9e00-a959a1800212</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1">
+      <value>1k / 1%</value>
+      <footprint>Study:R0603</footprint>
+      <datasheet>https://www.yageo.com/en/Product/Index/Chip_Resistors</datasheet>
+      <fields>
+        <field name="MPN">RC0603FR-071KL</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="Kind">component</field>
+        <field name="Design note"/>
+        <field name="Footprint">Study:R0603</field>
+        <field name="Datasheet">https://www.yageo.com/en/Product/Index/Chip_Resistors</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Study" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0603FR-071KL"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="Kind" value="component"/>
+      <property name="Design note" value=""/>
+      <property name="Sheetname" value="fixture"/>
+      <property name="Sheetfile" value="fixture.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ff3c1007-2850-516f-9967-b035d49edb5b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R2">
+      <value>523k / 1%</value>
+      <footprint>Study:R0402</footprint>
+      <datasheet>https://www.yageo.com/en/Product/Index/Chip_Resistors</datasheet>
+      <fields>
+        <field name="MPN">RC0402FR-07523KL</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="Kind">component</field>
+        <field name="Design note"/>
+        <field name="Footprint">Study:R0402</field>
+        <field name="Datasheet">https://www.yageo.com/en/Product/Index/Chip_Resistors</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Study" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07523KL"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="Kind" value="component"/>
+      <property name="Design note" value=""/>
+      <property name="Sheetname" value="fixture"/>
+      <property name="Sheetfile" value="fixture.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9c9a84a5-be69-5838-9eef-9ff12b544683</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R3">
+      <value>1M / 1%</value>
+      <footprint>Study:R0402</footprint>
+      <datasheet>https://www.yageo.com/en/Product/Index/Chip_Resistors</datasheet>
+      <fields>
+        <field name="MPN">RC0402FR-071ML</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="Kind">component</field>
+        <field name="Design note"/>
+        <field name="Footprint">Study:R0402</field>
+        <field name="Datasheet">https://www.yageo.com/en/Product/Index/Chip_Resistors</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Study" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-071ML"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="Kind" value="component"/>
+      <property name="Design note" value=""/>
+      <property name="Sheetname" value="fixture"/>
+      <property name="Sheetfile" value="fixture.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>badb21d3-edda-5b2f-9d4b-c27afecdd00a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R4">
+      <value>10k / 1%</value>
+      <footprint>Study:R0402</footprint>
+      <datasheet>https://www.yageo.com/en/Product/Index/Chip_Resistors</datasheet>
+      <fields>
+        <field name="MPN">RC0402FR-0710KL</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="Kind">component</field>
+        <field name="Design note"/>
+        <field name="Footprint">Study:R0402</field>
+        <field name="Datasheet">https://www.yageo.com/en/Product/Index/Chip_Resistors</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Study" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-0710KL"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="Kind" value="component"/>
+      <property name="Design note" value=""/>
+      <property name="Sheetname" value="fixture"/>
+      <property name="Sheetfile" value="fixture.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4e7ba87b-934b-5f12-9221-910116fdea2e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R5">
+      <value>1M / 1%</value>
+      <footprint>Study:R0402</footprint>
+      <datasheet>https://www.yageo.com/en/Product/Index/Chip_Resistors</datasheet>
+      <fields>
+        <field name="MPN">RC0402FR-071ML</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="Kind">component</field>
+        <field name="Design note"/>
+        <field name="Footprint">Study:R0402</field>
+        <field name="Datasheet">https://www.yageo.com/en/Product/Index/Chip_Resistors</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Study" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-071ML"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="Kind" value="component"/>
+      <property name="Design note" value=""/>
+      <property name="Sheetname" value="fixture"/>
+      <property name="Sheetfile" value="fixture.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cf64b1d1-bbf8-5db6-8731-2e499a27b7a0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R6">
+      <value>10k / 1%</value>
+      <footprint>Study:R0402</footprint>
+      <datasheet>https://www.yageo.com/en/Product/Index/Chip_Resistors</datasheet>
+      <fields>
+        <field name="MPN">RC0402FR-0710KL</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="Kind">component</field>
+        <field name="Design note"/>
+        <field name="Footprint">Study:R0402</field>
+        <field name="Datasheet">https://www.yageo.com/en/Product/Index/Chip_Resistors</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Study" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-0710KL"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="Kind" value="component"/>
+      <property name="Design note" value=""/>
+      <property name="Sheetname" value="fixture"/>
+      <property name="Sheetfile" value="fixture.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9b40cd59-07c1-57b5-90f2-85ef83dc8c76</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R7">
+      <value>1k / 1%</value>
+      <footprint>Study:R0603</footprint>
+      <datasheet>https://www.yageo.com/en/Product/Index/Chip_Resistors</datasheet>
+      <fields>
+        <field name="MPN">RC0603FR-071KL</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="Kind">component</field>
+        <field name="Design note"/>
+        <field name="Footprint">Study:R0603</field>
+        <field name="Datasheet">https://www.yageo.com/en/Product/Index/Chip_Resistors</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Study" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0603FR-071KL"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="Kind" value="component"/>
+      <property name="Design note" value=""/>
+      <property name="Sheetname" value="fixture"/>
+      <property name="Sheetfile" value="fixture.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3f687701-ae8d-5a52-aed9-768c7c469d3f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R8">
+      <value>100k / 1%</value>
+      <footprint>Study:R0402</footprint>
+      <datasheet>https://www.yageo.com/en/Product/Index/Chip_Resistors</datasheet>
+      <fields>
+        <field name="MPN">RC0402FR-07100KL</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="Kind">component</field>
+        <field name="Design note"/>
+        <field name="Footprint">Study:R0402</field>
+        <field name="Datasheet">https://www.yageo.com/en/Product/Index/Chip_Resistors</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Study" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07100KL"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="Kind" value="component"/>
+      <property name="Design note" value=""/>
+      <property name="Sheetname" value="fixture"/>
+      <property name="Sheetfile" value="fixture.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2c9d7f56-1a9d-53af-bb5b-d1947852fbb7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R9">
+      <value>100k / 1%</value>
+      <footprint>Study:R0402</footprint>
+      <datasheet>https://www.yageo.com/en/Product/Index/Chip_Resistors</datasheet>
+      <fields>
+        <field name="MPN">RC0402FR-07100KL</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="Kind">component</field>
+        <field name="Design note"/>
+        <field name="Footprint">Study:R0402</field>
+        <field name="Datasheet">https://www.yageo.com/en/Product/Index/Chip_Resistors</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Study" part="R" description="Resistor"/>
+      <property name="MPN" value="RC0402FR-07100KL"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="Kind" value="component"/>
+      <property name="Design note" value=""/>
+      <property name="Sheetname" value="fixture"/>
+      <property name="Sheetfile" value="fixture.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e7521329-ca9b-55cb-979d-d560dc7b28b8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW1">
+      <value>BOOT (hold)</value>
+      <footprint>Study:ManualSwitch</footprint>
+      <datasheet>https://components.omron.com/us-en/products/switches/B3F</datasheet>
+      <fields>
+        <field name="MPN">B3F-1000</field>
+        <field name="Manufacturer">Omron</field>
+        <field name="Kind">component</field>
+        <field name="Design note"/>
+        <field name="Footprint">Study:ManualSwitch</field>
+        <field name="Datasheet">https://components.omron.com/us-en/products/switches/B3F</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Study" part="Switch" description="Push button switch, generic, two pins"/>
+      <property name="MPN" value="B3F-1000"/>
+      <property name="Manufacturer" value="Omron"/>
+      <property name="Kind" value="component"/>
+      <property name="Design note" value=""/>
+      <property name="Sheetname" value="fixture"/>
+      <property name="Sheetfile" value="fixture.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b76cf280-5de1-5cba-9795-d9d173d7488d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW2">
+      <value>RESET (pulse)</value>
+      <footprint>Study:ManualSwitch</footprint>
+      <datasheet>https://components.omron.com/us-en/products/switches/B3F</datasheet>
+      <fields>
+        <field name="MPN">B3F-1000</field>
+        <field name="Manufacturer">Omron</field>
+        <field name="Kind">component</field>
+        <field name="Design note"/>
+        <field name="Footprint">Study:ManualSwitch</field>
+        <field name="Datasheet">https://components.omron.com/us-en/products/switches/B3F</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Study" part="Switch" description="Push button switch, generic, two pins"/>
+      <property name="MPN" value="B3F-1000"/>
+      <property name="Manufacturer" value="Omron"/>
+      <property name="Kind" value="component"/>
+      <property name="Design note" value=""/>
+      <property name="Sheetname" value="fixture"/>
+      <property name="Sheetfile" value="fixture.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>01525dd3-ee03-586d-83b1-93da5c77380e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1">
+      <value>SN74LVC2G125DCUR</value>
+      <footprint>Study:Buffer</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/sn74lvc2g125.pdf</datasheet>
+      <fields>
+        <field name="MPN">SN74LVC2G125DCUR</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="Kind">component</field>
+        <field name="Design note">Both channels gated; Ioff provides partial-power-down protection.</field>
+        <field name="Footprint">Study:Buffer</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74lvc2g125.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Study" part="Buffer" description="Dual Buffer Tri-State, Low-Voltage CMOS"/>
+      <property name="MPN" value="SN74LVC2G125DCUR"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="Kind" value="component"/>
+      <property name="Design note" value="Both channels gated; Ioff provides partial-power-down protection."/>
+      <property name="Sheetname" value="fixture"/>
+      <property name="Sheetfile" value="fixture.kicad_sch"/>
+      <property name="ki_keywords" value="Dual Buff Tri-State LVC CMOS"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e595b0e4-99c4-5f73-9e34-4fac38641fe5 f46ff90b-3d60-50d1-92ac-f80952fb7bd0 18075e85-d353-5644-ac25-d810c0c6cfad</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+        <unit name="B">
+          <pins>
+            <pin num="5"/>
+            <pin num="7"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+        <unit name="C">
+          <pins>
+            <pin num="8"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U2">
+      <value>TLV7041DBVR</value>
+      <footprint>Study:SOT23_5</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tlv7041.pdf</datasheet>
+      <fields>
+        <field name="MPN">TLV7041DBVR</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="Kind">component</field>
+        <field name="Design note">Open drain; inputs tolerate 7V with supply off. Output low only when device rail is present; internal plus external hysteresis.</field>
+        <field name="Footprint">Study:SOT23_5</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tlv7041.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Study" part="Comparator" description="Single, 1.6V-6.5V, 315nA Quiescent, Open-Drain Output, Comparator, North-west pinout, SOT-23-5"/>
+      <property name="MPN" value="TLV7041DBVR"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="Kind" value="component"/>
+      <property name="Design note" value="Open drain; inputs tolerate 7V with supply off. Output low only when device rail is present; internal plus external hysteresis."/>
+      <property name="Sheetname" value="fixture"/>
+      <property name="Sheetfile" value="fixture.kicad_sch"/>
+      <property name="ki_keywords" value="cmp collector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f6c7aa2e-4655-5c3d-8935-5c3cac03f9b6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Study" part="Adapter">
+      <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Adapter</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Study" part="Buffer">
+      <description>Dual Buffer Tri-State, Low-Voltage CMOS</description>
+      <docs>http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Buffer</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf</field>
+        <field name="Description">Dual Buffer Tri-State, Low-Voltage CMOS</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="input"/>
+        <pin num="2" name="" type="input"/>
+        <pin num="3" name="" type="tri_state"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="" type="input"/>
+        <pin num="6" name="" type="tri_state"/>
+        <pin num="7" name="" type="input"/>
+        <pin num="8" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Study" part="C">
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Study" part="Comparator">
+      <description>Single, 1.6V-6.5V, 315nA Quiescent, Open-Drain Output, Comparator, North-west pinout, SOT-23-5</description>
+      <docs>https://www.ti.com/lit/ds/symlink/tlv7041.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Comparator</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tlv7041.pdf</field>
+        <field name="Description">Single, 1.6V-6.5V, 315nA Quiescent, Open-Drain Output, Comparator, North-west pinout, SOT-23-5</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="open_collector"/>
+        <pin num="2" name="V-" type="power_in"/>
+        <pin num="3" name="+" type="input"/>
+        <pin num="4" name="-" type="input"/>
+        <pin num="5" name="V+" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Study" part="Pogo">
+      <description>Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Pogo</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Study" part="PowerPort">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">PowerPort</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Study" part="R">
+      <description>Resistor</description>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Study" part="Reference">
+      <description>2.048V Precision Micropower Shunt Voltage Reference, SOT-23</description>
+      <docs>http://www.ti.com/lit/ds/symlink/lm4040-n.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Reference</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/lm4040-n.pdf</field>
+        <field name="Description">2.048V Precision Micropower Shunt Voltage Reference, SOT-23</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+        <pin num="3" name="NC" type="no_connect"/>
+      </pins>
+    </libpart>
+    <libpart lib="Study" part="Switch">
+      <description>Push button switch, generic, two pins</description>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">Switch</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Push button switch, generic, two pins</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Study">
+      <uri>${KIPRJMOD}/Study.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/ADAPTER_RX" class="Default">
+      <node ref="J2" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+      <node ref="U1" pin="3" pintype="tri_state"/>
+    </net>
+    <net code="2" name="/ADAPTER_TX" class="Default">
+      <node ref="J2" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="U1" pin="2" pintype="input"/>
+    </net>
+    <net code="3" name="/DEVICE_BOOT" class="Default">
+      <node ref="J1" pin="6" pinfunction="Pin_6_6" pintype="passive"/>
+      <node ref="SW1" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="4" name="/DEVICE_EN" class="Default">
+      <node ref="J1" pin="5" pinfunction="Pin_5_5" pintype="passive"/>
+      <node ref="SW2" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="5" name="/DEVICE_RX" class="Default">
+      <node ref="J1" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+      <node ref="U1" pin="6" pintype="tri_state"/>
+    </net>
+    <net code="6" name="/DEVICE_TX" class="Default">
+      <node ref="J1" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+      <node ref="U1" pin="5" pintype="input"/>
+    </net>
+    <net code="7" name="/FX_3V3" class="Default">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="J3" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="VCC_8" pintype="power_in"/>
+      <node ref="U2" pin="5" pinfunction="V+_5" pintype="power_in"/>
+    </net>
+    <net code="8" name="/GND" class="Default">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="D1" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="J2" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J3" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="SW1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="SW2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="GND_4" pintype="power_in"/>
+      <node ref="U2" pin="2" pinfunction="V-_2" pintype="power_in"/>
+    </net>
+    <net code="9" name="/REF_2V048" class="Default">
+      <node ref="D1" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+    </net>
+    <net code="10" name="/REF_HYS" class="Default">
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="+_3" pintype="input"/>
+    </net>
+    <net code="11" name="/SENSE_3V3" class="Default">
+      <node ref="J1" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+    </net>
+    <net code="12" name="/SENSE_DIV" class="Default">
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="U2" pin="4" pinfunction="-_4" pintype="input"/>
+    </net>
+    <net code="13" name="/UART_OE_N" class="Default">
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="U1" pin="1" pintype="input"/>
+      <node ref="U1" pin="7" pintype="input"/>
+      <node ref="U2" pin="1" pintype="open_collector"/>
+    </net>
+    <net code="14" name="unconnected-(D1-NC-Pad3)" class="Default">
+      <node ref="D1" pin="3" pinfunction="NC_3" pintype="no_connect"/>
+    </net>
+    <net code="15" name="unconnected-(J2-Pin_1-Pad1)" class="Default">
+      <node ref="J2" pin="1" pinfunction="Pin_1_1" pintype="passive+no_connect"/>
+    </net>
+  </nets>
+</export>

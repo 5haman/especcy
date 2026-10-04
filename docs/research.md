@@ -10,6 +10,7 @@ Research date: **2026-10-03**. Original local baseline: **`13053ce`**. Web pages
 | --- | --- | --- |
 | U1 | User request in this session: “research, develop full docs and requirements suite and save to docs/ and README.md” | Authorization for documentation; no product approval inferred |
 | U2 | User requested the next phase, selected Dizzy instead of Jetpack, accepted the scoped plan and said “Implement the plan”; later requested “download from web” for local ROM/game checks | Authorization for the selected 48K firmware phase and local downloads; no procurement, manufacturing or redistribution permission inferred |
+| U3 | User requested the next phase, selected an LDO with a thermal gate, manual BOOT/RESET, supplier-neutral BOMs and no physical parts, then said “Implement the plan” | Authorization for carrier/fixture schematics, exact selections, unrouted placement and reproducible handoff; no enclosure changes, purchases or fabrication release |
 | L1 | [CAD README](../hardware/cad/README.md), lines 1–10 maturity; 26–42 components; 44–63 use and scope; 65–80 verification limits; 82–106 rebuilds | Original design narrative; its earlier “conversation” is unavailable |
 | L2 | [Parameters](../hardware/cad/parameters.json), lines 4–18 nominal values; 19–23 source claims; 25–35 assumptions | Recorded selections and estimates; not an electrical design |
 | L3 | [FreeCAD builder](../hardware/cad/scripts/build_freecad.py), lines 29–40 spreadsheet; 112–266 geometry; 267–276 design notes; 290–368 checks and exports | Implemented CAD behavior |
@@ -19,6 +20,7 @@ Research date: **2026-10-03**. Original local baseline: **`13053ce`**. Web pages
 | L7 | [Mesh manifest](../hardware/cad/models/assembly_meshes.json), top-level `units`, `parameters`, `components` | 47 component meshes, names, categories and material labels |
 | L8 | [CAD archive](../hardware/cad/speccy_micro_package.zip), 27 entries; [saved outline](../hardware/cad/reference/waveshare_085_outline.png) | Packaged artifacts and inherited manufacturer reference image |
 | L9 | [Firmware guide](../firmware/README.md), `firmware/common/`, `main/`, `host/`, `tools/` and `tests/` | Implemented 48K runtime and bench bindings; executed software evidence is in verification |
+| L10 | [Electrical guide](../hardware/electronics/README.md), KiCad projects, exact BOMs, native XML/STEP/SVG and [reports](../hardware/electronics/reports/electrical-checks.json) | 2026-10-04 circuit/placement implementation and executed static checks; no physical evidence |
 
 ## External sources inspected
 
@@ -36,7 +38,21 @@ Research date: **2026-10-03**. Original local baseline: **`13053ce`**. Web pages
 | W10 | [Original Dizzy player](https://thecodemastersarchive.co.uk/playonline/player.php?core=fuse&rom=%2Fplayonline%2Froms%2Fzxspectrum%2Fcodemasters%2FDizzy%20The%20Ultimate%20Cartoon%20Adventure.z80&title=Dizzy%20The%20Ultimate%20Cartoon%20Adventure&autostart=1), [manual](https://worldofspectrum.org//pub/sinclair/games-info/d/Dizzy.txt), [ROM source at a pinned ESPectrum revision](https://github.com/EremusOne/ESPectrum/blob/2a2c3350eb2b26dd871fc1f98cbf4f6c93c41948/include/roms/romSinclair48K.h) | Downloaded original Dizzy extended 48K Z80 v3 for local validation. Manual: K starts with Kempston; Up jumps; Fire picks up/uses. Extracted active ROM bytes match original 48K ROM MD5 `4c42a2f075212361c3117015b107ff68`. Local-only assets; no redistribution entitlement |
 | W11 | [ESP-IDF v5.4.4](https://github.com/espressif/esp-idf/tree/v5.4.4), Git checkout `296b6eab9445fd720e71aecab961e2d3fbca9944` | Selected toolchain; recursive checkout and installed ESP32 tools built both modes. Version checked by CMake; original ESP32 target, 4 MB flash, no PSRAM |
 
-The [WROOM datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf) was discovered through W3 but not read in this review. The [DevKitC dimension drawing](https://dl.espressif.com/dl/schematics/esp32_devkitc_v4_dimensions.pdf) and [LCD outline URL](https://www.waveshare.com/img/devkit/LCD/0.85inch-LCD-Module/0.85inch-LCD-Module-details-size.jpg) are inherited L1/L2 references, not newly verified web sources. The DevKitC outline remains a comparison prop.
+W12–W22 were read for U3 on **2026-10-04** through Safari, then inspected as local PDFs. [Downloaded document hashes](../hardware/electronics/reports/sources.json) retain exact provenance; full PDFs are not redistributed. The WROOM datasheet was subsequently read as W21. The DevKitC dimension drawing and inherited LCD outline URL remain original references; the DevKitC outline is a comparison prop.
+
+| ID | Source | Verified information and limit |
+| --- | --- | --- |
+| W12 | [TI TLV757P](https://www.ti.com/lit/ds/symlink/tlv757p.pdf), SBVS322C | TLV75733PDBVR pinout/capacitors; 5.5 V recommended input and 125 °C recommended junction; DBV EVM 100.8 and JEDEC 231.1 °C/W references, not carrier measurements |
+| W13 | [TE 2337228-2](https://www.te.com/en/product-2337228-2.html), linked customer drawing C-2337228 rev B | USLPT3026EL2TR alias; grouped contacts/pads; nominal 0.65 mm height and 0.15 mm travel; 1.00 mm recommended pressing tip and general tolerance |
+| W14 | [GCT USB3076 drawing](https://gct.co/download?type=PDFDrawing&name=USB3076.pdf), rev C | 7.4 × 5.55 × 2.35 mm nominal body; mounting datum, 1 mm shell stakes, 1.8 A power contacts; physical socket/cable still unmeasured |
+| W15 | [Waveshare module schematic](https://files.waveshare.com/wiki/0.85inch-LCD-Module/0.85inch-OLED-Module-Schematic.pdf) linked by W2 | Eight-pin order; RT9193 and 8050 backlight transistor with 1 kΩ BL input; W2 FAQ says up to 60 mA; physical pad orientation/revision still needs a sample |
+| W16 | [Bourns MF-PSMF](https://www.bourns.com/docs/product-datasheets/mf-psmf.pdf) | 075X hold-current derating and 2.30 × 1.50 × 1.25 mm maximum envelope |
+| W17 | [Bourns CDSOD323-TxxC](https://www.bourns.com/docs/product-datasheets/cdsod323-txxc.pdf) | T05C 5.0 V working peak, 6.0 V minimum breakdown, 9.8 V maximum clamp at 1 A; not LDO overvoltage protection |
+| W18 | [TI TLV7041](https://www.ti.com/lit/ds/symlink/tlv7041.pdf), SLVSE13J | DBV open-drain pinout, internal hysteresis and 7 V inputs with supply off; typical bias only, so threshold allowances need bench validation |
+| W19 | [TI SN74LVC2G125](https://www.ti.com/lit/ds/symlink/sn74lvc2g125.pdf) | DCU pinout, both three-state directions, OE pull-up, 3.3 V levels and `Ioff` |
+| W20 | [TI LM4040](https://www.ti.com/lit/ds/symlink/lm4040.pdf), SLOS456Q | LM4040A20IDBZR 2.048 V option, bias, drift and cathode/anode assignment |
+| W21 | [Espressif WROOM-32E/32UE](https://documentation.espressif.com/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf), v2.1 | N4 ordering, 18 × 25.5 × 3.1 mm, pins, straps and 1 ms hold interval |
+| W22 | [Murata selected 10 µF sheet, mirrored by Octopart](https://datasheet.octopart.com/GRM188R61A106KE69J-Murata-datasheet-182088559.pdf) | GRM188R61A106KE69D/J, 10 µF ±10%, 10 V X5R; length/width/height each ±0.15 mm. Direct Murata endpoints returned not found. DC bias, other passive selections and stock remain qualification gates |
 
 ## Findings and implications
 
@@ -65,4 +81,4 @@ These are arithmetic bounds, not runtime benchmarks or acceptance thresholds.
 
 ## Remaining research
 
-Obtain the selected module's electrical limits; exact switch, socket, regulator and screw data; measured display depths; and any intended ROM/game distribution rights. Core licensing and software build evidence are now recorded. Electrical, thermal, human-factors and hardware performance results still need physical samples. The selected frame cadence is a target, not a measured hardware result. There is no production BOM cost, lifetime or compliance claim.
+U3 adds module, switch, socket and regulator data. Still obtain passive qualification and stock, exact screws, measured display depths, physical current/thermal/fit results and intended ROM/game distribution rights. Core licensing and software build evidence are now recorded. Electrical, thermal, human-factors and hardware performance results still need physical samples. The selected frame cadence is a target, not a measured hardware result. There is no production BOM cost, lifetime or compliance claim.

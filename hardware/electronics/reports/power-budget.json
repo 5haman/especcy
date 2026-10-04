@@ -1,0 +1,271 @@
+{
+  "status": "thermal acceptance OPEN",
+  "recommended_max_tj_c": 125,
+  "theta_reference_c_per_w": {
+    "DBV_EVM_reference": 100.8,
+    "DBV_JEDEC_reference": 231.1
+  },
+  "budget_ma": {
+    "ESP32_supply_capability_guidance": 500,
+    "LCD_FAQ_max": 60,
+    "total": 560
+  },
+  "scenarios": [
+    {
+      "vin_v": 4.75,
+      "load_ma": 100,
+      "ambient_c": 25,
+      "ldo_loss_w": 0.145,
+      "reference_tj_c": {
+        "DBV_EVM_reference": 39.6,
+        "DBV_JEDEC_reference": 58.5
+      }
+    },
+    {
+      "vin_v": 4.75,
+      "load_ma": 100,
+      "ambient_c": 40,
+      "ldo_loss_w": 0.145,
+      "reference_tj_c": {
+        "DBV_EVM_reference": 54.6,
+        "DBV_JEDEC_reference": 73.5
+      }
+    },
+    {
+      "vin_v": 4.75,
+      "load_ma": 250,
+      "ambient_c": 25,
+      "ldo_loss_w": 0.3625,
+      "reference_tj_c": {
+        "DBV_EVM_reference": 61.5,
+        "DBV_JEDEC_reference": 108.8
+      }
+    },
+    {
+      "vin_v": 4.75,
+      "load_ma": 250,
+      "ambient_c": 40,
+      "ldo_loss_w": 0.3625,
+      "reference_tj_c": {
+        "DBV_EVM_reference": 76.5,
+        "DBV_JEDEC_reference": 123.8
+      }
+    },
+    {
+      "vin_v": 4.75,
+      "load_ma": 560,
+      "ambient_c": 25,
+      "ldo_loss_w": 0.812,
+      "reference_tj_c": {
+        "DBV_EVM_reference": 106.8,
+        "DBV_JEDEC_reference": 212.7
+      }
+    },
+    {
+      "vin_v": 4.75,
+      "load_ma": 560,
+      "ambient_c": 40,
+      "ldo_loss_w": 0.812,
+      "reference_tj_c": {
+        "DBV_EVM_reference": 121.8,
+        "DBV_JEDEC_reference": 227.7
+      }
+    },
+    {
+      "vin_v": 4.75,
+      "load_ma": 1000,
+      "ambient_c": 25,
+      "ldo_loss_w": 1.45,
+      "reference_tj_c": {
+        "DBV_EVM_reference": 171.2,
+        "DBV_JEDEC_reference": 360.1
+      }
+    },
+    {
+      "vin_v": 4.75,
+      "load_ma": 1000,
+      "ambient_c": 40,
+      "ldo_loss_w": 1.45,
+      "reference_tj_c": {
+        "DBV_EVM_reference": 186.2,
+        "DBV_JEDEC_reference": 375.1
+      }
+    },
+    {
+      "vin_v": 5,
+      "load_ma": 100,
+      "ambient_c": 25,
+      "ldo_loss_w": 0.17,
+      "reference_tj_c": {
+        "DBV_EVM_reference": 42.1,
+        "DBV_JEDEC_reference": 64.3
+      }
+    },
+    {
+      "vin_v": 5,
+      "load_ma": 100,
+      "ambient_c": 40,
+      "ldo_loss_w": 0.17,
+      "reference_tj_c": {
+        "DBV_EVM_reference": 57.1,
+        "DBV_JEDEC_reference": 79.3
+      }
+    },
+    {
+      "vin_v": 5,
+      "load_ma": 250,
+      "ambient_c": 25,
+      "ldo_loss_w": 0.425,
+      "reference_tj_c": {
+        "DBV_EVM_reference": 67.8,
+        "DBV_JEDEC_reference": 123.2
+      }
+    },
+    {
+      "vin_v": 5,
+      "load_ma": 250,
+      "ambient_c": 40,
+      "ldo_loss_w": 0.425,
+      "reference_tj_c": {
+        "DBV_EVM_reference": 82.8,
+        "DBV_JEDEC_reference": 138.2
+      }
+    },
+    {
+      "vin_v": 5,
+      "load_ma": 560,
+      "ambient_c": 25,
+      "ldo_loss_w": 0.952,
+      "reference_tj_c": {
+        "DBV_EVM_reference": 121.0,
+        "DBV_JEDEC_reference": 245.0
+      }
+    },
+    {
+      "vin_v": 5,
+      "load_ma": 560,
+      "ambient_c": 40,
+      "ldo_loss_w": 0.952,
+      "reference_tj_c": {
+        "DBV_EVM_reference": 136.0,
+        "DBV_JEDEC_reference": 260.0
+      }
+    },
+    {
+      "vin_v": 5,
+      "load_ma": 1000,
+      "ambient_c": 25,
+      "ldo_loss_w": 1.7,
+      "reference_tj_c": {
+        "DBV_EVM_reference": 196.4,
+        "DBV_JEDEC_reference": 417.9
+      }
+    },
+    {
+      "vin_v": 5,
+      "load_ma": 1000,
+      "ambient_c": 40,
+      "ldo_loss_w": 1.7,
+      "reference_tj_c": {
+        "DBV_EVM_reference": 211.4,
+        "DBV_JEDEC_reference": 432.9
+      }
+    },
+    {
+      "vin_v": 5.25,
+      "load_ma": 100,
+      "ambient_c": 25,
+      "ldo_loss_w": 0.195,
+      "reference_tj_c": {
+        "DBV_EVM_reference": 44.7,
+        "DBV_JEDEC_reference": 70.1
+      }
+    },
+    {
+      "vin_v": 5.25,
+      "load_ma": 100,
+      "ambient_c": 40,
+      "ldo_loss_w": 0.195,
+      "reference_tj_c": {
+        "DBV_EVM_reference": 59.7,
+        "DBV_JEDEC_reference": 85.1
+      }
+    },
+    {
+      "vin_v": 5.25,
+      "load_ma": 250,
+      "ambient_c": 25,
+      "ldo_loss_w": 0.4875,
+      "reference_tj_c": {
+        "DBV_EVM_reference": 74.1,
+        "DBV_JEDEC_reference": 137.7
+      }
+    },
+    {
+      "vin_v": 5.25,
+      "load_ma": 250,
+      "ambient_c": 40,
+      "ldo_loss_w": 0.4875,
+      "reference_tj_c": {
+        "DBV_EVM_reference": 89.1,
+        "DBV_JEDEC_reference": 152.7
+      }
+    },
+    {
+      "vin_v": 5.25,
+      "load_ma": 560,
+      "ambient_c": 25,
+      "ldo_loss_w": 1.092,
+      "reference_tj_c": {
+        "DBV_EVM_reference": 135.1,
+        "DBV_JEDEC_reference": 277.4
+      }
+    },
+    {
+      "vin_v": 5.25,
+      "load_ma": 560,
+      "ambient_c": 40,
+      "ldo_loss_w": 1.092,
+      "reference_tj_c": {
+        "DBV_EVM_reference": 150.1,
+        "DBV_JEDEC_reference": 292.4
+      }
+    },
+    {
+      "vin_v": 5.25,
+      "load_ma": 1000,
+      "ambient_c": 25,
+      "ldo_loss_w": 1.95,
+      "reference_tj_c": {
+        "DBV_EVM_reference": 221.6,
+        "DBV_JEDEC_reference": 475.6
+      }
+    },
+    {
+      "vin_v": 5.25,
+      "load_ma": 1000,
+      "ambient_c": 40,
+      "ldo_loss_w": 1.95,
+      "reference_tj_c": {
+        "DBV_EVM_reference": 236.6,
+        "DBV_JEDEC_reference": 490.6
+      }
+    }
+  ],
+  "fuse_hold_ma_at_c": {
+    "23": 750,
+    "40": 630,
+    "50": 570,
+    "60": 530,
+    "70": 420,
+    "85": 350
+  },
+  "tvs": {
+    "working_peak_v": 5.0,
+    "minimum_breakdown_v": 6.0,
+    "max_clamp_at_1a_v": 9.8,
+    "disposition": "Not LDO overvoltage protection. The 5.25V thermal scenario exceeds the selected TVS working-peak rating; restrict the prototype source to <=5.0V or reselect protection before qualification. ESD performance untested."
+  },
+  "assumptions": "Supply capability budget is not measured consumption. Vin is voltage at the LDO after fuse/cable losses. Reference thermal boards do not establish this tiny carrier/enclosure thermal resistance. Excludes ESP32/display/PPTC self-heating.",
+  "release_gate": "Measure startup, display-on and sustained Dizzy current, input/3V3 transients and junction estimate in the enclosure at agreed ambient. Meet all recommended limits with margin; do not rely on thermal shutdown. Fuse derating must also pass. If it fails, revisit the selected LDO strategy explicitly."
+}

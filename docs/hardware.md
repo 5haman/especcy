@@ -1,6 +1,6 @@
 # Hardware specification
 
-The assembly is a nominal digital model. Its geometry and manufacturer XY dimensions have evidence; its unselected parts, electrical design and fabrication fits do not yet have physical evidence.
+The assembly remains a nominal digital model. The [electrical study](../hardware/electronics/README.md) selects parts and adds checked circuits and placement. Physical fit, routing, power/thermal behavior and fabrication tolerances remain unqualified. The original CAD geometry below is preserved as the packaging baseline.
 
 ## Coordinates and dimensions
 
@@ -27,7 +27,7 @@ The native document also contains simplified contacts, wires and screw geometry.
 
 ## Controls
 
-All six caps have a modeled 3.5 mm diameter. Switches use a generic 3 × 2.6 × 0.65 mm envelope. The flange and stem geometry capture each cap, but the model does not establish actuation force, stroke, return behavior or debounce.
+All six caps have a modeled 3.5 mm diameter. The legacy CAD switches use a generic 3 × 2.6 × 0.65 mm envelope. U3 selects TE 2337228-2 at the same centres: nominal 0.65 mm height, 0.15 mm travel and 160 ±50 gf force. Its recommended 1.00 mm pressing tip differs from the 1.80 mm stems. Height tolerance can cause 0.15 mm preload/interference; actuation remains a physical gate.
 
 | Control | X center | Y center |
 | --- | ---: | ---: |
@@ -42,16 +42,16 @@ The reported button-hole radial gap is 0.21 mm. It is a nominal CAD gap, not a p
 
 ## Component register
 
-This is a **model inventory**, not a purchase-ready bill of materials. Quantities for generic electronics describe rendered envelopes rather than a complete circuit.
+This is the **legacy model inventory**. For selected parts and actual circuit quantities, use L10's [BOMs](../hardware/electronics/README.md). Neither inventory authorizes purchases or fabrication.
 
 | Item | Modeled quantity | Selection status |
 | --- | ---: | --- |
 | ESP32-WROOM-32E-N4 | 1 | Selected module; verify exact ordering data and purchased marking |
 | Waveshare SKU 26117 | 1 | Selected module; connector modification assumed |
-| Custom carrier PCB | 1 | Envelope only; no schematic, netlist, stack specification or fabrication files |
-| Low-profile tactile switches | 6 | Generic; part number and stroke pending |
-| Micro-B socket | 1 | Generic; power-only intent |
-| 3.3 V LDO | 1 | SOT-23-5 envelope; no selected electrical part |
+| Custom carrier PCB | 1 | Electrical schematic/netlist and unrouted two-layer 0.8 mm board added in L10; no fabrication release |
+| Low-profile tactile switches | 6 | TE 2337228-2 / USLPT3026EL2TR selected in L10; original geometry unchanged |
+| Micro-B socket | 1 | GCT USB3076-30-A selected; one shell stake conflicts with Down switch courtyard |
+| 3.3 V LDO | 1 | TLV75733PDBVR selected; continuous current remains thermally gated |
 | Capacitors | 3 | Generic 0603 envelopes; values and required circuit quantity unresolved |
 | EN/BOOT pullups | 2 | Generic 0402 envelopes; circuit values unresolved |
 | Programming contacts | 6 pads | Geometry only; not an onboard USB-UART bridge |
@@ -75,7 +75,7 @@ L6 records these results. The script computes shape distances; they are not elec
 
 ## Electrical preparation
 
-The schematic needs to define power regulation, protection, reset/boot biasing, decoupling, switch circuits, LCD control and programmer power handling. W4's supply guidance is a design input; total load must include the display and the selected operating workload. A small LDO envelope does not establish available current or heat dissipation.
+L10 now defines regulation, protection, reset/boot biasing, decoupling, switches, LCD control and programmer sensing. The selected 560 mA supply-capability budget is W4's 500 mA guidance plus the LCD's 60 mA FAQ limit, not measured consumption. It gives 0.952 W LDO loss at 5 V. Regulator thermal capability, fuse derating, source/protection limits and actual workload remain open gates.
 
 Use the selected WROOM module's pin constraints. W2's ESP32-S3 example does not supply this board's pin map. Review flash-connected pins and boot straps before assigning controls. See [interfaces and firmware](interfaces-and-firmware.md).
 
@@ -85,7 +85,7 @@ This is a planning sequence, not a released assembly instruction.
 
 1. Select exact parts and measure the LCD, including its active-area location and depth after connector removal.
 2. Update the stack and footprint drawings using those measurements. Resolve fabrication tolerances and fastener details.
-3. Design and review the schematic and carrier routing. Check power, reset and programmer connections before energizing a prototype.
+3. Review the new schematic and its recorded gates, then route and review the carrier after part qualification. Check power, reset and programmer connections before energizing a prototype.
 4. Validate electronics and display behavior on the chosen prototype arrangement. Record currents and temperatures for the selected workload.
 5. Trial the case, plungers, gasket and wire route. Check cable overmold access, fixture reach and assembly order on a physical sample.
 6. Record fit, button actuation and thermal findings against V-015 before claiming manufacturing readiness.

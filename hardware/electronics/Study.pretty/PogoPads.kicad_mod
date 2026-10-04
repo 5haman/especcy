@@ -1,0 +1,116 @@
+(footprint "PogoPads"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Six underside contacts, 1.50mm pitch. No paste. Pin1 left in underside view, right in front projection.")
+	(property "Reference" ""
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(uuid "ba4d103d-b51c-4d56-a2b5-28dc28c838a7")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "3bbae9fb-9473-49ca-9248-41127ea8ce1d")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c497c0d3-d66e-409b-a272-cfd60b6a2704")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "898b2a29-583c-425d-9b59-f756fa9b78f6")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -4.525 -1)
+		(end 4.525 1)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "eb87672d-9b5f-4955-ac89-2b2def3f14bb")
+	)
+	(fp_rect
+		(start -4.275 -0.75)
+		(end 4.275 0.75)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "f2a10f08-bcfd-4a9d-8437-32ee72b875f3")
+	)
+	(pad "1" smd rect
+		(at -3.75 0)
+		(size 1.05 1.5)
+		(layers "F.Cu" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "81db0001-7b43-4c2b-af25-3d4aa192455e")
+	)
+	(pad "2" smd rect
+		(at -2.25 0)
+		(size 1.05 1.5)
+		(layers "F.Cu" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "3e583187-ed2c-4a66-921c-0a1959743cc5")
+	)
+	(pad "3" smd rect
+		(at -0.75 0)
+		(size 1.05 1.5)
+		(layers "F.Cu" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "d091c18a-d7c5-4223-9d44-1335d9887ada")
+	)
+	(pad "4" smd rect
+		(at 0.75 0)
+		(size 1.05 1.5)
+		(layers "F.Cu" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "fab5df0f-34a5-4d9e-b54a-3bf8b4e79fe9")
+	)
+	(pad "5" smd rect
+		(at 2.25 0)
+		(size 1.05 1.5)
+		(layers "F.Cu" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "daf7162b-46cc-4ef5-bc8b-bd35c2bddebb")
+	)
+	(pad "6" smd rect
+		(at 3.75 0)
+		(size 1.05 1.5)
+		(layers "F.Cu" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "12e84b0f-1a04-4cd6-9bf3-c6b8b6ccbdbb")
+	)
+	(embedded_fonts no)
+)

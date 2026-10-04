@@ -8,25 +8,25 @@ This matrix maps every catalogue ID to upstream evidence, the current implementa
 | BR-002 | L1 1–10, 26–42, 76–80 | Study and documented limits | V-001 | D-001; stakeholder confirmation |
 | USR-001 | L1 53–54; L2 8–14, 33; U2/L9 | Kempston, debounce and isolated menu; native cases pass | V-008 | Physical switches, item use and user assessment |
 | USR-002 | L1 48–52; L2 32; U2/L9 | Runtime renderer; original Dizzy host frames inspected | V-007 | Actual LCD/readability and D-010 assessment |
-| USR-003 | L1 42; L2 30 | Pogo pad/access geometry | V-006 | D-007; fixture and electrical test |
+| USR-003 | L1 42; L2 30; U3/L10 | Numbered sense-only pogo interface and manual gated fixture reference | V-006, V-017 | Probe mechanics and physical flash/recovery test |
 | CON-001 | L1 3–6, 31–32; L2 5–6 | WROOM/carrier envelopes in L3/L7 | V-003 | Exact module qualification and routed carrier |
 | CON-002 | L1 3, 29; L2 4; L3 274 | Native, STEP and Blender envelopes checked | V-002 | D-014; physical size tolerance |
 | CON-003 | L1 33; L2 7; W1 | LCD envelope and artwork | V-003 | Purchased revision and physical sample |
-| CON-004 | L1 40, 56; L2 17, 30 | Generic socket envelope | V-005 | Schematic, current budget and operation |
+| CON-004 | L1 40, 56; L2 17, 30; L10 | Power-only GCT Micro-B circuit; D+/D-/ID NC | V-005, V-017 | Source/protection, physical current/heat and socket fit |
 | CON-005 | L1 57–59; L2 31; L9 | IDF components exclude Wi-Fi/BT; configuration guard and ELF checks pass | V-010 | Bench startup observation; preserve disabled radios |
 | CON-006 | L1 53–59; L2 33–34 | Excluded from model inventory | V-003 | Preserve scope in electronics/firmware |
 | MEC-001 | L1 29–30; L2 4 | L3 shell solids and spreadsheet | V-002, V-004 | D-011/D-014; process and local wall review |
-| MEC-002 | L1 32; L2 5; L3 180–187 | Carrier blank with reliefs/cutout | V-003, V-004 | Routing, part/tolerance validation |
+| MEC-002 | L1 32; L2 5; L3 180–187; L10 | Unrouted 0.8 mm two-layer board preserves native reliefs/cutout | V-003, V-004, V-017 | Routing, part/tolerance validation |
 | MEC-003 | L1 44–48 | Module/LCD placements in L3 | V-003, V-004 | D-003; measured stack |
 | MEC-004 | L1 39, 45, 53; L2 8–14 | Six separate plunger solids/STLs | V-004, V-008 | D-002/D-010; actuation and usability |
 | MEC-005 | L1 30; L3 137–148, 261–266 | Bosses and simplified screws | V-004 | D-002/D-011; actual fastening |
 | MEC-006 | L1 38; L3 150–151, 239–241 | Ledges and foam ring | V-004 | D-003/D-011; retention and compression |
 | MEC-007 | L1 37; L2 27 | Eight illustrative wires; connector omitted | V-003, V-004 | Sample modification and real routing |
 | MEC-008 | L1 42, 45–46; L3 129–166 | Openings in shell solids | V-004, V-006 | Cable and fixture access |
-| ELE-001 | L1 41; L3 224–228 | LDO/capacitor/pullup envelopes | V-005 | D-002; schematic and load measurements |
-| ELE-002 | L1 42; L2 30; L3 207–208 | Six pad solids with labels | V-006 | D-007/DEC-001; netlist and pinout |
-| ELE-003 | L1 33, 37; L2 21, 27; W1/W2/W9; L9 | SPI GC9107 driver and bench GPIO binding; no carrier netlist | V-005, V-007 | Physical wiring, orientation, color and transfer tests |
-| ELE-004 | USR-003/ELE-002; W4/W6 | Candidate; no reset/boot circuit | V-006 | D-007/DEC-005; review and test |
+| ELE-001 | L1 41; L3 224–228; U3/L10/W12/W16/W17 | TLV75733, protection/decoupling/reset circuit and exact BOM; ERC-clean | V-005, V-017 | LDO/PPTC thermal capacity, protection/source range and measured transients |
+| ELE-002 | L1 42; L2 30; L3 207–208; U3/L10 | Numbered six-pad native board/netlist; sense-only 3V3 policy and mating views | V-006, V-017 | Probe qualification and physical power/flash cases |
+| ELE-003 | L1 33, 37; L2 21, 27; W1/W2/W9/W15; L9/L10 | SPI GC9107 driver and carrier netlist agree on six GPIOs and eight LCD wires | V-005, V-007, V-017 | Physical pads, wiring, orientation, color and transfer tests |
+| ELE-004 | USR-003/ELE-002; W4/W6/W18–W21; L10 | 10 kΩ/1 µF EN, boot straps and manual gated UART reference | V-006, V-017 | Physical reset, brownout, leakage and recovery tests |
 | FW-001 | L1 48–52; L2 32; U2/L9 | Averaged/centered 128 × 96 renderer with border/attributes; native tests pass | V-007 | Physical GC9107 and readability evidence |
 | FW-002 | L1 53; L2 33; U2/L9 | All five Kempston bits, held/diagonal/opposed cases tested | V-008 | Physical inputs and actual pickup/use case |
 | FW-003 | L1 53; L2 33; U2/L9 | Resume/Restart, pause isolation and full-release gate tested | V-008 | Physical menu/latency checks |
@@ -39,9 +39,9 @@ This matrix maps every catalogue ID to upstream evidence, the current implementa
 | CAD-003 | L1 67–70; L3 290–327 | Mechanical report and builder assertions | V-002, V-013 | Stored primary-collision pass; check exclusions remain |
 | CAD-004 | L1 17, 48–51, 72–74; L4/L5 | BLEND and four previews | V-014 | Existing validator passed |
 | CAD-005 | L1 72–73; L3/L4 | Manifest in mm; Blender import at 0.001 | V-012, V-014 | Source mapping and validator checked; presentation modifiers remain |
-| QUA-001 | L1 76–80; L2 28–29 | Documented prerequisite only | V-003, V-005, V-015 | Purchased measurements, exact parts and routed PCB |
-| QUA-002 | L1 78–79 | Nominal geometry only | V-004, V-006, V-008, V-015 | Physical samples and accepted tolerances |
-| QUA-003 | L1 78–79 | No thermal model or measurement | V-005, V-015 | D-010; operating workload and thermal validation |
+| QUA-001 | L1 76–80; L2 28–29; L10 | Exact part selections and circuit/placement evidence | V-003, V-005, V-015, V-017 | Purchased measurements, fit/protection qualification and routed PCB |
+| QUA-002 | L1 78–79; L10 | Nominal geometry plus explicit switch/USB tolerance conflicts | V-004, V-006, V-008, V-015, V-017 | Physical samples and accepted tolerances |
+| QUA-003 | L1 78–79; L10/W12/W16 | Reproducible LDO loss/reference temperature and fuse-derating arithmetic | V-005, V-015 | Actual carrier/enclosure temperature and D-010 acceptance |
 
 All rows also inherit D-001's ownership and acceptance-authority gap. No duplicate obligation is created by listing a stakeholder need and its solution decomposition. For example, USR-002 describes the viewing experience; FW-001 describes the selected image size.
 

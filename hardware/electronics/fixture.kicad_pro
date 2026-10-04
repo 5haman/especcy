@@ -1,0 +1,65 @@
+{
+  "board": {
+    "design_settings": {
+      "defaults": {},
+      "diff_pair_dimensions": [],
+      "drc_exclusions": [],
+      "rules": {},
+      "track_widths": [],
+      "via_dimensions": []
+    }
+  },
+  "boards": [],
+  "libraries": {
+    "pinned_footprint_libs": [],
+    "pinned_symbol_libs": []
+  },
+  "meta": {
+    "filename": "fixture.kicad_pro",
+    "version": 1
+  },
+  "net_settings": {
+    "classes": [
+      {
+        "name": "Default",
+        "clearance": 0.15,
+        "track_width": 0.2,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "diff_pair_width": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "wire_width": 6,
+        "bus_width": 12
+      }
+    ],
+    "meta": {
+      "version": 0
+    }
+  },
+  "pcbnew": {
+    "page_layout_descr_file": ""
+  },
+  "sheets": [
+    [
+      "c9628d8e-309c-57f6-986d-44fcc1e8c232",
+      "Especcy manual programming fixture - reference circuit"
+    ]
+  ],
+  "text_variables": {
+    "DESIGN_STATUS": "UNROUTED STUDY - NOT FOR FABRICATION"
+  },
+  "erc": {
+    "erc_exclusions": [],
+    "rule_severities": {
+      "single_global_label": "warning",
+      "four_way_junction": "warning",
+      "simulation_model_issue": "warning",
+      "footprint_filter": "warning"
+    }
+  }
+}

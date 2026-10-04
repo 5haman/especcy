@@ -1,6 +1,6 @@
 # Decision register
 
-No accountable product acceptance owner was supplied. U2 authorizes the firmware choices recorded below. Remaining decisions retain **owner not supplied**; implementation evidence does not assign a person, deadline or product approval.
+No accountable product acceptance owner was supplied. U2 authorizes firmware choices; U3 authorizes the electrical study recorded below. Remaining decisions retain **owner not supplied**; implementation evidence does not assign a person, deadline or product approval.
 
 ## Recorded design choices
 
@@ -54,7 +54,20 @@ The user authorized these choices through the accepted plan and implementation r
 | D-012 | GPLv3 core/integration is accepted; dependency notices and local content sources/hashes retained | Original CAD/docs license is D-013; ROM/game redistribution remains unresolved. Local downloads do not grant distribution rights |
 | D-015 | Build rejects missing/invalid supported content; boot errors stop with UART reason and an LCD error when available; recovery is a complete UART reflash; power loss/restart restores the compiled SNA | Physical fault, interrupted-flash, cold-boot and power tests remain open |
 
-DEC-001 is selected for bench GPIOs only. DEC-002 uses the standard 1 MiB factory app, flash-backed content and a build-time SHA256 manifest. DEC-003 uses independent 10 ms debounce without held-menu repeat. DEC-004 uses the manufacturer GC9107 sequence, X+2/Y+3 offsets and initially 20 MHz SPI. The exact bindings are in the [firmware guide](../firmware/README.md); none releases a PCB or resolves D-007's fixture circuit.
+U2 selected DEC-001 for bench GPIOs; U3 now checks that allocation in the carrier. DEC-002 uses the standard 1 MiB factory app, flash-backed content and a build-time SHA256 manifest. DEC-003 uses independent 10 ms debounce without held-menu repeat. DEC-004 uses the manufacturer GC9107 sequence, X+2/Y+3 offsets and initially 20 MHz SPI. The exact bindings are in the [firmware guide](../firmware/README.md); none releases a PCB. U3 resolves the fixture policy below, with physical validation open.
+
+## U3 electrical resolutions — 2026-10-04
+
+The user selected an LDO with a thermal gate, manual BOOT/RESET, supplier-neutral BOMs and a study without physical parts, then requested implementation. L10 and W12–W22 record the resulting evidence. Routing, procurement, fabrication release and enclosure changes are outside this phase.
+
+| ID | Selected outcome | Remaining boundary |
+| --- | --- | --- |
+| D-002 | TLV75733PDBVR, TE 2337228-2 / USLPT3026EL2TR, GCT USB3076-30-A and exact passive/protection BOMs | Part availability, passive bias/tolerances, physical socket/switch fit and screws remain unqualified |
+| D-007 | Device powered by Micro-B; pogo 3V3 sense only; independent fixture rail; both UART directions gated; manual BOOT/RESET with explicit mating views | No fixture PCB/probe mechanics; all power/flash/recovery cases need hardware |
+| DEC-001 | Carrier GPIO map cross-checked against firmware, with unused/flash pins NC and GPIO0/2/12 straps | Routing and physical tests |
+| DEC-005 | Power/protection, 10 kΩ/1 µF EN, decoupling, boot straps and fixture reference circuit selected | LDO/PPTC thermal gate, TVS source-range/ESD qualification and routing remain open |
+
+The LDO's 1 A electrical rating does not establish continuous capability here. At the 560 mA supply-capability budget, 5 V yields 0.952 W loss. TI reference thermal boards do not represent this enclosure. The selected TVS has 5.0 V working peak, so the 5.25 V thermal sweep is outside its qualified input range. The switch-tip/height and USB stake findings in L10 must be resolved using samples or an explicit changed design choice; no geometry change is inferred.
 
 ## Decisions to be taken during decomposition
 

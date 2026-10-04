@@ -1,0 +1,31 @@
+{
+  "status": "physical acceptance OPEN",
+  "carrier_step_valid": true,
+  "component_step_valid": true,
+  "component_step_solids": 20,
+  "step_to_cad_z_translation_mm": 4.845,
+  "carrier_envelope_mm": [
+    20.8,
+    34.8,
+    0.8
+  ],
+  "dielectric_core_thickness_mm": 0.71,
+  "actual_outline_xy_mm": [
+    20.8,
+    34.769694
+  ],
+  "contained_step_grid_points": 2254,
+  "conservative_body_findings": [],
+  "open_gates": [
+    "TE recommended pressing tip diameter 1.00mm and alignment <=0.20mm; existing stem diameter 1.80mm.",
+    "Switch nominal top Z6.25 vs stem bottom Z6.30 leaves 0.05mm. Drawing general tolerance gives possible top Z6.45: 0.15mm preload/interference; travel nominal 0.15mm.",
+    "GCT 1.00mm nominal shell stakes pass through 0.80mm carrier: nominal protrusion 0.20mm, up to 0.40mm with the drawing general +/-0.20mm tolerance before PCB tolerance. One stake lies inside Down switch courtyard; check physical contact/assembly.",
+    "USB maximum envelope reaches the opening right edge (zero nominal lateral margin); cable/overmold access and socket tolerances unqualified.",
+    "Pogo centres move from legacy Y8.45 to Y8.25, within the same underside opening; mirrored numbering now defined electrically.",
+    "LCD revision, connector-removal depth, physical pad order and eight-wire solder access/bend radius need samples.",
+    "Passives use conservative family envelopes; selected-part DC bias, package tolerance, hand assembly and supplier availability need qualification.",
+    "Nominal USB/switch STEP shapes are local envelope approximations. Other models come from KiCad; preview is not vendor-certified assembly evidence.",
+    "Antenna cutout follows unchanged CAD; full RF clearance is not preserved. Keep radios disabled."
+  ],
+  "acceptance": "No enclosure edits, routing, Gerbers, procurement or fabrication release. Resolve recorded gates before any claim of physical fit."
+}

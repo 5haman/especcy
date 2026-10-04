@@ -4,7 +4,7 @@ A compact, USB-powered ESP32 handheld concept for ZX Spectrum games. The reposit
 
 ![Speccy micro CAD presentation with six buttons and a small display](hardware/cad/renders/assembled.png)
 
-The CAD screen is illustrative artwork. The host emulator and ESP32 firmware builds pass software checks. An electrical schematic, routed carrier PCB and tested physical prototype remain open.
+The CAD screen is illustrative artwork. The host emulator and ESP32 firmware builds pass software checks. The [electrical study](hardware/electronics/README.md) adds checked carrier/fixture schematics, exact BOMs and an unrouted placement board. Routing and physical qualification remain open, including recorded thermal and switch/socket fit gates.
 
 ## Design baseline
 
@@ -14,8 +14,8 @@ The CAD screen is illustrative artwork. The host emulator and ESP32 firmware bui
 | Display | Waveshare 0.85-inch LCD, SKU 26117; GC9107; 128 × 128 pixels; 3.3 V SPI |
 | Game picture | 2 × 2 averaging to 128 × 96; centered with 16 border-colored rows above and below |
 | Controls | Up, Down, Left, Right, Fire, Menu |
-| Power | Micro-B, 5 V input; a 3.3 V regulator is a reserved package envelope |
-| Programming | External USB-UART fixture through GND, 3V3, TX, RX, EN and BOOT pogo pads |
+| Power | GCT Micro-B power only; TLV75733PDBVR 3.3 V LDO, with input protection and thermal qualification gates |
+| Programming | External gated UART fixture; pogo 3V3 is sense only; manual BOOT/RESET |
 | Case | Two halves; 24 × 38 × 11.6 mm shell; 12 mm including caps |
 | Constraints | Radios disabled; no battery, SD card, speaker or full keyboard |
 
@@ -25,6 +25,7 @@ The compact stack assumes removal of the LCD's MX1.25 connector and replacement 
 
 - [Documentation index](docs/README.md): the full suite and reading paths.
 - [Firmware guide](firmware/README.md): native checks, diagnostic/Dizzy builds, content preparation, wiring and bench acceptance.
+- [Electrical guide](hardware/electronics/README.md): KiCad files, pinouts, exact BOMs, reproduction, fit/thermal findings and [previews](hardware/electronics/previews/index.html).
 - [Product brief](docs/product-brief.md): purpose, scope, users and maturity.
 - [Requirements catalogue](docs/requirements.md): 38 sourced requirements with status and verification links.
 - [Research and sources](docs/research.md): manufacturer checks, implementation evidence and feasibility limits.
@@ -63,6 +64,6 @@ The checked tools were FreeCAD 1.1.4 and Blender 5.2.2 LTS. See the [development
 
 ## Project status and licensing
 
-The [roadmap](docs/roadmap.md) records the authorized firmware phase and the open hardware gate. The selected workload is original Dizzy on Spectrum 48K, using ESP-IDF v5.4.4 and a pinned GPLv3 Z80 core. Product ownership, budgets, dates and wider acceptance criteria remain open.
+The [roadmap](docs/roadmap.md) records the authorized firmware/electrical phases and the open hardware gate. The selected workload is original Dizzy on Spectrum 48K, using ESP-IDF v5.4.4 and a pinned GPLv3 Z80 core. Product ownership, budgets, dates and wider acceptance criteria remain open.
 
 The new firmware uses [GPL-3.0](firmware/LICENSE), with dependency notices retained. The original CAD/documentation license and ROM/game distribution rights remain unresolved; private game assets and generated builds are ignored. See D-012 and D-013 in the [decision register](docs/decisions.md).

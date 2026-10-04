@@ -1,0 +1,2 @@
+ref,quantity,value,mpn,manufacturer,footprint,kind,source,note
+LCD1,1,0.85inch LCD Module / GC9107 / 128x128,26117,Waveshare,19 x 22.5mm module,assembly_module,https://www.waveshare.com/0.85inch-lcd-module.htm,"Included MX1.25 connector removed; eight wires. Depth and physical pad order unmeasured. Wire, case, fasteners and probes are not qualified BOM items."

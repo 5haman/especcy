@@ -1,0 +1,22 @@
+ref,quantity,value,mpn,manufacturer,footprint,kind,source,note
+J1,1,Micro-B / power only,USB3076-30-A,GCT,USB,component,https://gct.co/connector/usb3076,"PCB-edge datum used; mouth Y=0.30, rear Y=5.85. D+/D-/ID unconnected."
+F1,1,750mA PPTC,MF-PSMF075X-2,Bourns,Fuse,component,https://www.bourns.com/docs/product-datasheets/mf-psmf.pdf,
+D1,1,5V bidirectional ESD,CDSOD323-T05C,Bourns,TVS,component,https://www.bourns.com/docs/product-datasheets/cdsod323-txxc.pdf,"ESD shunt, not a 5.5V overvoltage clamp. No system ESD qualification."
+U2,1,TLV75733PDBVR,TLV75733PDBVR,Texas Instruments,SOT23_5,component,https://www.ti.com/lit/ds/symlink/tlv757p.pdf,1A electrical rating; continuous current is thermally gated. EN tied to input.
+C1,1,10u / 10V X5R,GRM188R61A106KE69D,Murata,C0603,component,https://www.murata.com/en-global/products/capacitor/mlcc,
+C2,1,10u / 10V X5R,GRM188R61A106KE69D,Murata,C0603,component,https://www.murata.com/en-global/products/capacitor/mlcc,
+C3,1,100n / 16V X7R,GRM155R71C104KA88D,Murata,C0402,component,https://www.murata.com/en-global/products/capacitor/mlcc,
+C4,1,1u / 10V X5R,GRM155R61A105KE15D,Murata,C0402,component,https://www.murata.com/en-global/products/capacitor/mlcc,
+R1,1,10k / 1%,RC0402FR-0710KL,Yageo,R0402,component,https://www.yageo.com/en/Product/Index/Chip_Resistors,
+R2,1,10k / 1%,RC0402FR-0710KL,Yageo,R0402,component,https://www.yageo.com/en/Product/Index/Chip_Resistors,
+R3,1,10k / 1%,RC0402FR-0710KL,Yageo,R0402,component,https://www.yageo.com/en/Product/Index/Chip_Resistors,
+R4,1,10k / 1%,RC0402FR-0710KL,Yageo,R0402,component,https://www.yageo.com/en/Product/Index/Chip_Resistors,
+U1,1,ESP32-WROOM-32E-N4,ESP32-WROOM-32E-N4,Espressif,ESP32,component,https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf,Radios off. Antenna over existing cutout; no RF performance claim.
+J2,1,LCD wire pads / 26117,PCB feature,Carrier fabricator,LCDPads,pcb_feature,https://www.waveshare.com/wiki/0.85inch_LCD_Module,Eight solder wires after MX1.25 removal. Physical module pad order requires sample confirmation.
+J3,1,Pogo / 3V3 sense only,PCB feature,Carrier fabricator,PogoPads,pcb_feature,,Device-centric TX/RX. Pad 2 is a sense output; never a supply input.
+SW1,1,Up / 160gf,2337228-2,TE Connectivity,TESwitch,component,https://www.te.com/en/product-2337228-2.html,"Drawing B: T1/T2 common, T3/T4 common; 0.65 nominal height plus 0.20 general tolerance. Recommended plunger diameter 1.0mm."
+SW2,1,Down / 160gf,2337228-2,TE Connectivity,TESwitch,component,https://www.te.com/en/product-2337228-2.html,"Drawing B: T1/T2 common, T3/T4 common; 0.65 nominal height plus 0.20 general tolerance. Recommended plunger diameter 1.0mm."
+SW3,1,Left / 160gf,2337228-2,TE Connectivity,TESwitch,component,https://www.te.com/en/product-2337228-2.html,"Drawing B: T1/T2 common, T3/T4 common; 0.65 nominal height plus 0.20 general tolerance. Recommended plunger diameter 1.0mm."
+SW4,1,Right / 160gf,2337228-2,TE Connectivity,TESwitch,component,https://www.te.com/en/product-2337228-2.html,"Drawing B: T1/T2 common, T3/T4 common; 0.65 nominal height plus 0.20 general tolerance. Recommended plunger diameter 1.0mm."
+SW5,1,Fire / 160gf,2337228-2,TE Connectivity,TESwitch,component,https://www.te.com/en/product-2337228-2.html,"Drawing B: T1/T2 common, T3/T4 common; 0.65 nominal height plus 0.20 general tolerance. Recommended plunger diameter 1.0mm."
+SW6,1,Menu / 160gf,2337228-2,TE Connectivity,TESwitch,component,https://www.te.com/en/product-2337228-2.html,"Drawing B: T1/T2 common, T3/T4 common; 0.65 nominal height plus 0.20 general tolerance. Recommended plunger diameter 1.0mm."

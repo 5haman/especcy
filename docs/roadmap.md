@@ -1,6 +1,6 @@
 # Development roadmap
 
-U1 authorized the documentation baseline. U2 authorized the next software phase: Spectrum 48K firmware for original Dizzy, with a diagnostic and bench handoff. The broader product stages below remain proposals without assigned owners, dates, budget or procurement authorization.
+U1 authorized the documentation baseline. U2 authorized Spectrum 48K firmware for original Dizzy. U3 authorized the electrical schematic and placement study with an LDO thermal gate and manual programming fixture. The broader product stages below remain proposals without assigned owners, dates, budget or procurement authorization.
 
 The current baseline includes the checked packaging study, a host-tested runtime and successful ESP32 builds. The physical gate must close using hardware evidence, not a CAD pass or host benchmark.
 
@@ -16,6 +16,16 @@ The current baseline includes the checked packaging study, a host-tested runtime
 | `op-se7.2` | Physical WROOM/LCD/Dizzy validation | Open: LCD/input/action tests, cadence and heap logs, power/heat, cold boot and interrupted-programming recovery |
 
 The shared Operator Beads workspace tracks these items under `project:especcy`. The next gate depends on the prepared firmware milestone. It does not authorize part purchases, a carrier release or enclosure changes.
+
+## Authorized electrical study
+
+| Beads item | Outcome | Current evidence |
+| --- | --- | --- |
+| `op-se7.3` | Electrical schematic and placement study | Delivered in [hardware/electronics](../hardware/electronics/README.md); physical and fabrication gates remain open |
+| `op-se7.3.1` | Exact BOMs, carrier/fixture circuits, native placement, reproduction and handoff | Both schematics ERC-clean with all rules enabled; firmware/BOM/netlist and board parity pass; native STEP reopens; Safari previews inspected |
+| `op-se7.2` | Existing physical gate, extended with design findings | Still open: LDO/PPTC heat, protection/source range, switch-tip/height, USB stake/opening, LCD modification, probe reach and power/flash/recovery tests |
+
+The board is unrouted. DRC records one USB shell-stake/Down-switch courtyard conflict and 70 expected unconnected items, with zero schematic parity issues. No conflict is excluded. Exact part selections and conservative fit calculations do not qualify purchased parts. Preserve the enclosure and controls until a measured result supports an explicit changed choice.
 
 ## Broader product stages
 

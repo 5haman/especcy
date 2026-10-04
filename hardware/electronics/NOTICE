@@ -1,0 +1,29 @@
+KiCad library snapshots
+=======================
+
+Study.kicad_sym and the standard footprints copied into Study.pretty derive
+from the KiCad libraries installed with KiCad 10.0.6. Source identifiers are
+recorded in design.py. Library sources:
+https://gitlab.com/kicad/libraries/kicad-symbols
+https://gitlab.com/kicad/libraries/kicad-footprints
+https://gitlab.com/kicad/libraries/kicad-packages3D
+
+KiCad libraries are licensed under CC BY-SA 4.0 with the KiCad library
+exception. The exception permits unrestricted use of library data in
+electronic designs and their manufacture. KICAD-LICENSE.txt retains the
+upstream license/exception notice. See the upstream LICENSE.md files:
+https://gitlab.com/kicad/libraries/kicad-symbols/-/blob/master/LICENSE.md
+https://gitlab.com/kicad/libraries/kicad-footprints/-/blob/master/LICENSE.md
+
+Project symbol aliases, hidden sourcing fields and blanked upstream footprint
+filters are modifications. The ESP32 footprint uses 0.30mm thermal-pad holes;
+its clipped pin marker is on Fab. The USB footprint references a local nominal
+envelope because the installed library has no matching STEP model.
+TESwitch, PogoPads and LCDPads are project-created footprints. Their geometry
+and the local nominal switch/USB STEP models are not manufacturer CAD models.
+
+Manufacturer documents remain copyrighted by their respective owners. They
+were consulted, not redistributed. Part selections and sources are in the
+BOMs and reports/sources.json. No endorsement is implied. The original
+project's licensing decision remains D-013; this notice does not assign a
+license to all original CAD, scripts or documentation.

@@ -1,0 +1,1874 @@
+{
+  "status": "pass",
+  "copper_layers": 2,
+  "thickness_mm": 0.8,
+  "footprints": 21,
+  "tracks": 0,
+  "pad_net_parity": true,
+  "native_outline_parity": true,
+  "pads": [
+    {
+      "ref": "J1",
+      "pin": "1",
+      "net": "VBUS",
+      "cad_xy_mm": [
+        13.65,
+        5.7
+      ],
+      "size_mm": [
+        0.4,
+        1.4
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "J1",
+      "pin": "2",
+      "net": "unconnected-(J1-D--Pad2)",
+      "cad_xy_mm": [
+        13.0,
+        5.7
+      ],
+      "size_mm": [
+        0.4,
+        1.4
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "J1",
+      "pin": "3",
+      "net": "unconnected-(J1-D+-Pad3)",
+      "cad_xy_mm": [
+        12.35,
+        5.7
+      ],
+      "size_mm": [
+        0.4,
+        1.4
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "J1",
+      "pin": "4",
+      "net": "unconnected-(J1-ID-Pad4)",
+      "cad_xy_mm": [
+        11.7,
+        5.7
+      ],
+      "size_mm": [
+        0.4,
+        1.4
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "J1",
+      "pin": "5",
+      "net": "GND",
+      "cad_xy_mm": [
+        11.05,
+        5.7
+      ],
+      "size_mm": [
+        0.4,
+        1.4
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "J1",
+      "pin": "SH",
+      "net": "GND",
+      "cad_xy_mm": [
+        15.925,
+        3.05
+      ],
+      "size_mm": [
+        1.05,
+        1.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "J1",
+      "pin": "SH",
+      "net": "GND",
+      "cad_xy_mm": [
+        14.67,
+        5.28
+      ],
+      "size_mm": [
+        1.15,
+        1.45
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "J1",
+      "pin": "SH",
+      "net": "GND",
+      "cad_xy_mm": [
+        13.475,
+        3.05
+      ],
+      "size_mm": [
+        1.75,
+        1.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "J1",
+      "pin": "SH",
+      "net": "GND",
+      "cad_xy_mm": [
+        11.225,
+        3.05
+      ],
+      "size_mm": [
+        1.75,
+        1.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "J1",
+      "pin": "SH",
+      "net": "GND",
+      "cad_xy_mm": [
+        10.03,
+        5.28
+      ],
+      "size_mm": [
+        1.15,
+        1.45
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "J1",
+      "pin": "SH",
+      "net": "GND",
+      "cad_xy_mm": [
+        8.775,
+        3.05
+      ],
+      "size_mm": [
+        1.05,
+        1.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "F1",
+      "pin": "1",
+      "net": "VBUS",
+      "cad_xy_mm": [
+        19.8375,
+        5.8
+      ],
+      "size_mm": [
+        0.975,
+        1.4
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "F1",
+      "pin": "2",
+      "net": "VBUS_FUSED",
+      "cad_xy_mm": [
+        17.9625,
+        5.8
+      ],
+      "size_mm": [
+        0.975,
+        1.4
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "D1",
+      "pin": "1",
+      "net": "GND",
+      "cad_xy_mm": [
+        6.45,
+        4.1
+      ],
+      "size_mm": [
+        0.6,
+        0.45
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "D1",
+      "pin": "2",
+      "net": "VBUS_FUSED",
+      "cad_xy_mm": [
+        4.35,
+        4.1
+      ],
+      "size_mm": [
+        0.6,
+        0.45
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U2",
+      "pin": "1",
+      "net": "VBUS_FUSED",
+      "cad_xy_mm": [
+        10.95,
+        10.5625
+      ],
+      "size_mm": [
+        1.325,
+        0.6
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "U2",
+      "pin": "2",
+      "net": "GND",
+      "cad_xy_mm": [
+        11.9,
+        10.5625
+      ],
+      "size_mm": [
+        1.325,
+        0.6
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "U2",
+      "pin": "3",
+      "net": "VBUS_FUSED",
+      "cad_xy_mm": [
+        12.85,
+        10.5625
+      ],
+      "size_mm": [
+        1.325,
+        0.6
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "U2",
+      "pin": "4",
+      "net": "unconnected-(U2-NC-Pad4)",
+      "cad_xy_mm": [
+        12.85,
+        12.8375
+      ],
+      "size_mm": [
+        1.325,
+        0.6
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "U2",
+      "pin": "5",
+      "net": "3V3",
+      "cad_xy_mm": [
+        10.95,
+        12.8375
+      ],
+      "size_mm": [
+        1.325,
+        0.6
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "C1",
+      "pin": "1",
+      "net": "VBUS_FUSED",
+      "cad_xy_mm": [
+        16.225,
+        13.2
+      ],
+      "size_mm": [
+        0.9,
+        0.95
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "C1",
+      "pin": "2",
+      "net": "GND",
+      "cad_xy_mm": [
+        17.775,
+        13.2
+      ],
+      "size_mm": [
+        0.9,
+        0.95
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "C2",
+      "pin": "1",
+      "net": "3V3",
+      "cad_xy_mm": [
+        14.5,
+        12.025
+      ],
+      "size_mm": [
+        0.9,
+        0.95
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "C2",
+      "pin": "2",
+      "net": "GND",
+      "cad_xy_mm": [
+        14.5,
+        13.575
+      ],
+      "size_mm": [
+        0.9,
+        0.95
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "C3",
+      "pin": "1",
+      "net": "3V3",
+      "cad_xy_mm": [
+        21.75,
+        27.02
+      ],
+      "size_mm": [
+        0.56,
+        0.62
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "C3",
+      "pin": "2",
+      "net": "GND",
+      "cad_xy_mm": [
+        21.75,
+        27.98
+      ],
+      "size_mm": [
+        0.56,
+        0.62
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "C4",
+      "pin": "1",
+      "net": "EN",
+      "cad_xy_mm": [
+        21.75,
+        24.72
+      ],
+      "size_mm": [
+        0.56,
+        0.62
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "C4",
+      "pin": "2",
+      "net": "GND",
+      "cad_xy_mm": [
+        21.75,
+        25.68
+      ],
+      "size_mm": [
+        0.56,
+        0.62
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "R1",
+      "pin": "1",
+      "net": "3V3",
+      "cad_xy_mm": [
+        21.75,
+        22.09
+      ],
+      "size_mm": [
+        0.54,
+        0.64
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "R1",
+      "pin": "2",
+      "net": "EN",
+      "cad_xy_mm": [
+        21.75,
+        23.11
+      ],
+      "size_mm": [
+        0.54,
+        0.64
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "R2",
+      "pin": "1",
+      "net": "3V3",
+      "cad_xy_mm": [
+        13.59,
+        8.1
+      ],
+      "size_mm": [
+        0.54,
+        0.64
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "R2",
+      "pin": "2",
+      "net": "BOOT",
+      "cad_xy_mm": [
+        14.61,
+        8.1
+      ],
+      "size_mm": [
+        0.54,
+        0.64
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "R3",
+      "pin": "1",
+      "net": "STRAP_GPIO2",
+      "cad_xy_mm": [
+        14.69,
+        10.7
+      ],
+      "size_mm": [
+        0.54,
+        0.64
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "R3",
+      "pin": "2",
+      "net": "GND",
+      "cad_xy_mm": [
+        15.71,
+        10.7
+      ],
+      "size_mm": [
+        0.54,
+        0.64
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "R4",
+      "pin": "1",
+      "net": "STRAP_GPIO12",
+      "cad_xy_mm": [
+        14.89,
+        9.5
+      ],
+      "size_mm": [
+        0.54,
+        0.64
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "R4",
+      "pin": "2",
+      "net": "GND",
+      "cad_xy_mm": [
+        15.91,
+        9.5
+      ],
+      "size_mm": [
+        0.54,
+        0.64
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "U1",
+      "pin": "1",
+      "net": "GND",
+      "cad_xy_mm": [
+        20.75,
+        28.11
+      ],
+      "size_mm": [
+        1.5,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "2",
+      "net": "3V3",
+      "cad_xy_mm": [
+        20.75,
+        26.84
+      ],
+      "size_mm": [
+        1.5,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "3",
+      "net": "EN",
+      "cad_xy_mm": [
+        20.75,
+        25.57
+      ],
+      "size_mm": [
+        1.5,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "4",
+      "net": "unconnected-(U1-SENSOR_VP-Pad4)",
+      "cad_xy_mm": [
+        20.75,
+        24.3
+      ],
+      "size_mm": [
+        1.5,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "5",
+      "net": "unconnected-(U1-SENSOR_VN-Pad5)",
+      "cad_xy_mm": [
+        20.75,
+        23.03
+      ],
+      "size_mm": [
+        1.5,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "6",
+      "net": "unconnected-(U1-IO34-Pad6)",
+      "cad_xy_mm": [
+        20.75,
+        21.76
+      ],
+      "size_mm": [
+        1.5,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "7",
+      "net": "unconnected-(U1-IO35-Pad7)",
+      "cad_xy_mm": [
+        20.75,
+        20.49
+      ],
+      "size_mm": [
+        1.5,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "8",
+      "net": "BTN_LEFT",
+      "cad_xy_mm": [
+        20.75,
+        19.22
+      ],
+      "size_mm": [
+        1.5,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "9",
+      "net": "BTN_RIGHT",
+      "cad_xy_mm": [
+        20.75,
+        17.95
+      ],
+      "size_mm": [
+        1.5,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "10",
+      "net": "LCD_BL",
+      "cad_xy_mm": [
+        20.75,
+        16.68
+      ],
+      "size_mm": [
+        1.5,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "11",
+      "net": "BTN_UP",
+      "cad_xy_mm": [
+        20.75,
+        15.41
+      ],
+      "size_mm": [
+        1.5,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "12",
+      "net": "BTN_DOWN",
+      "cad_xy_mm": [
+        20.75,
+        14.14
+      ],
+      "size_mm": [
+        1.5,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "13",
+      "net": "BTN_MENU",
+      "cad_xy_mm": [
+        20.75,
+        12.87
+      ],
+      "size_mm": [
+        1.5,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "14",
+      "net": "STRAP_GPIO12",
+      "cad_xy_mm": [
+        20.75,
+        11.6
+      ],
+      "size_mm": [
+        1.5,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "15",
+      "net": "GND",
+      "cad_xy_mm": [
+        17.715,
+        10.35
+      ],
+      "size_mm": [
+        1.5,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "16",
+      "net": "BTN_FIRE",
+      "cad_xy_mm": [
+        16.445,
+        10.35
+      ],
+      "size_mm": [
+        1.5,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "17",
+      "net": "unconnected-(U1-NC-Pad17)",
+      "cad_xy_mm": [
+        15.175,
+        10.35
+      ],
+      "size_mm": [
+        1.5,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "18",
+      "net": "unconnected-(U1-NC-Pad18)",
+      "cad_xy_mm": [
+        13.905,
+        10.35
+      ],
+      "size_mm": [
+        1.5,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "19",
+      "net": "unconnected-(U1-NC-Pad19)",
+      "cad_xy_mm": [
+        12.635,
+        10.35
+      ],
+      "size_mm": [
+        1.5,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "20",
+      "net": "unconnected-(U1-NC-Pad20)",
+      "cad_xy_mm": [
+        11.365,
+        10.35
+      ],
+      "size_mm": [
+        1.5,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "21",
+      "net": "unconnected-(U1-NC-Pad21)",
+      "cad_xy_mm": [
+        10.095,
+        10.35
+      ],
+      "size_mm": [
+        1.5,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "22",
+      "net": "unconnected-(U1-NC-Pad22)",
+      "cad_xy_mm": [
+        8.825,
+        10.35
+      ],
+      "size_mm": [
+        1.5,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "23",
+      "net": "unconnected-(U1-IO15-Pad23)",
+      "cad_xy_mm": [
+        7.555,
+        10.35
+      ],
+      "size_mm": [
+        1.5,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "24",
+      "net": "STRAP_GPIO2",
+      "cad_xy_mm": [
+        6.285,
+        10.35
+      ],
+      "size_mm": [
+        1.5,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "25",
+      "net": "BOOT",
+      "cad_xy_mm": [
+        3.25,
+        11.6
+      ],
+      "size_mm": [
+        1.5,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "26",
+      "net": "unconnected-(U1-IO4-Pad26)",
+      "cad_xy_mm": [
+        3.25,
+        12.87
+      ],
+      "size_mm": [
+        1.5,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "27",
+      "net": "unconnected-(U1-IO16-Pad27)",
+      "cad_xy_mm": [
+        3.25,
+        14.14
+      ],
+      "size_mm": [
+        1.5,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "28",
+      "net": "unconnected-(U1-IO17-Pad28)",
+      "cad_xy_mm": [
+        3.25,
+        15.41
+      ],
+      "size_mm": [
+        1.5,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "29",
+      "net": "unconnected-(U1-IO5-Pad29)",
+      "cad_xy_mm": [
+        3.25,
+        16.68
+      ],
+      "size_mm": [
+        1.5,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "30",
+      "net": "LCD_CLK",
+      "cad_xy_mm": [
+        3.25,
+        17.95
+      ],
+      "size_mm": [
+        1.5,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "31",
+      "net": "LCD_RST",
+      "cad_xy_mm": [
+        3.25,
+        19.22
+      ],
+      "size_mm": [
+        1.5,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "32",
+      "net": "unconnected-(U1-NC-Pad32)",
+      "cad_xy_mm": [
+        3.25,
+        20.49
+      ],
+      "size_mm": [
+        1.5,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "33",
+      "net": "LCD_CS",
+      "cad_xy_mm": [
+        3.25,
+        21.76
+      ],
+      "size_mm": [
+        1.5,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "34",
+      "net": "UART_RX",
+      "cad_xy_mm": [
+        3.25,
+        23.03
+      ],
+      "size_mm": [
+        1.5,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "35",
+      "net": "UART_TX",
+      "cad_xy_mm": [
+        3.25,
+        24.3
+      ],
+      "size_mm": [
+        1.5,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "36",
+      "net": "LCD_DC",
+      "cad_xy_mm": [
+        3.25,
+        25.57
+      ],
+      "size_mm": [
+        1.5,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "37",
+      "net": "LCD_DIN",
+      "cad_xy_mm": [
+        3.25,
+        26.84
+      ],
+      "size_mm": [
+        1.5,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "38",
+      "net": "GND",
+      "cad_xy_mm": [
+        3.25,
+        28.11
+      ],
+      "size_mm": [
+        1.5,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "39",
+      "net": "GND",
+      "cad_xy_mm": [
+        14.9,
+        18.99
+      ],
+      "size_mm": [
+        0.9,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "39",
+      "net": "GND",
+      "cad_xy_mm": [
+        14.9,
+        19.69
+      ],
+      "size_mm": [
+        0.6,
+        0.6
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "39",
+      "net": "GND",
+      "cad_xy_mm": [
+        14.9,
+        20.39
+      ],
+      "size_mm": [
+        0.9,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "39",
+      "net": "GND",
+      "cad_xy_mm": [
+        14.9,
+        21.09
+      ],
+      "size_mm": [
+        0.6,
+        0.6
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "39",
+      "net": "GND",
+      "cad_xy_mm": [
+        14.9,
+        21.79
+      ],
+      "size_mm": [
+        0.9,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "39",
+      "net": "GND",
+      "cad_xy_mm": [
+        14.2,
+        18.99
+      ],
+      "size_mm": [
+        0.6,
+        0.6
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "39",
+      "net": "GND",
+      "cad_xy_mm": [
+        14.2,
+        20.39
+      ],
+      "size_mm": [
+        0.6,
+        0.6
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "39",
+      "net": "GND",
+      "cad_xy_mm": [
+        14.2,
+        21.79
+      ],
+      "size_mm": [
+        0.6,
+        0.6
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "39",
+      "net": "GND",
+      "cad_xy_mm": [
+        13.5,
+        18.99
+      ],
+      "size_mm": [
+        0.9,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "39",
+      "net": "GND",
+      "cad_xy_mm": [
+        13.5,
+        19.69
+      ],
+      "size_mm": [
+        0.6,
+        0.6
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "39",
+      "net": "GND",
+      "cad_xy_mm": [
+        13.5,
+        20.39
+      ],
+      "size_mm": [
+        0.9,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "39",
+      "net": "GND",
+      "cad_xy_mm": [
+        13.5,
+        21.09
+      ],
+      "size_mm": [
+        0.6,
+        0.6
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "39",
+      "net": "GND",
+      "cad_xy_mm": [
+        13.5,
+        21.79
+      ],
+      "size_mm": [
+        0.9,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "39",
+      "net": "GND",
+      "cad_xy_mm": [
+        12.8,
+        18.99
+      ],
+      "size_mm": [
+        0.6,
+        0.6
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "39",
+      "net": "GND",
+      "cad_xy_mm": [
+        12.8,
+        20.39
+      ],
+      "size_mm": [
+        0.6,
+        0.6
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "39",
+      "net": "GND",
+      "cad_xy_mm": [
+        12.8,
+        21.79
+      ],
+      "size_mm": [
+        0.6,
+        0.6
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "39",
+      "net": "GND",
+      "cad_xy_mm": [
+        12.1,
+        18.99
+      ],
+      "size_mm": [
+        0.9,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "39",
+      "net": "GND",
+      "cad_xy_mm": [
+        12.1,
+        19.69
+      ],
+      "size_mm": [
+        0.6,
+        0.6
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "39",
+      "net": "GND",
+      "cad_xy_mm": [
+        12.1,
+        20.39
+      ],
+      "size_mm": [
+        0.9,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "39",
+      "net": "GND",
+      "cad_xy_mm": [
+        12.1,
+        21.09
+      ],
+      "size_mm": [
+        0.6,
+        0.6
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "U1",
+      "pin": "39",
+      "net": "GND",
+      "cad_xy_mm": [
+        12.1,
+        21.79
+      ],
+      "size_mm": [
+        0.9,
+        0.9
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "J2",
+      "pin": "1",
+      "net": "3V3",
+      "cad_xy_mm": [
+        21.55,
+        20.85
+      ],
+      "size_mm": [
+        1.2,
+        0.85
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "J2",
+      "pin": "2",
+      "net": "GND",
+      "cad_xy_mm": [
+        21.55,
+        19.55
+      ],
+      "size_mm": [
+        1.2,
+        0.85
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "J2",
+      "pin": "3",
+      "net": "LCD_DIN",
+      "cad_xy_mm": [
+        21.55,
+        18.25
+      ],
+      "size_mm": [
+        1.2,
+        0.85
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "J2",
+      "pin": "4",
+      "net": "LCD_CLK",
+      "cad_xy_mm": [
+        21.55,
+        16.95
+      ],
+      "size_mm": [
+        1.2,
+        0.85
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "J2",
+      "pin": "5",
+      "net": "LCD_CS",
+      "cad_xy_mm": [
+        21.55,
+        15.65
+      ],
+      "size_mm": [
+        1.2,
+        0.85
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "J2",
+      "pin": "6",
+      "net": "LCD_DC",
+      "cad_xy_mm": [
+        21.55,
+        14.35
+      ],
+      "size_mm": [
+        1.2,
+        0.85
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "J2",
+      "pin": "7",
+      "net": "LCD_RST",
+      "cad_xy_mm": [
+        21.55,
+        13.05
+      ],
+      "size_mm": [
+        1.2,
+        0.85
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "J2",
+      "pin": "8",
+      "net": "LCD_BL",
+      "cad_xy_mm": [
+        21.55,
+        11.75
+      ],
+      "size_mm": [
+        1.2,
+        0.85
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "J3",
+      "pin": "1",
+      "net": "GND",
+      "cad_xy_mm": [
+        15.75,
+        8.25
+      ],
+      "size_mm": [
+        1.05,
+        1.5
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "J3",
+      "pin": "2",
+      "net": "3V3",
+      "cad_xy_mm": [
+        14.25,
+        8.25
+      ],
+      "size_mm": [
+        1.05,
+        1.5
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "J3",
+      "pin": "3",
+      "net": "UART_TX",
+      "cad_xy_mm": [
+        12.75,
+        8.25
+      ],
+      "size_mm": [
+        1.05,
+        1.5
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "J3",
+      "pin": "4",
+      "net": "UART_RX",
+      "cad_xy_mm": [
+        11.25,
+        8.25
+      ],
+      "size_mm": [
+        1.05,
+        1.5
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "J3",
+      "pin": "5",
+      "net": "EN",
+      "cad_xy_mm": [
+        9.75,
+        8.25
+      ],
+      "size_mm": [
+        1.05,
+        1.5
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "J3",
+      "pin": "6",
+      "net": "BOOT",
+      "cad_xy_mm": [
+        8.25,
+        8.25
+      ],
+      "size_mm": [
+        1.05,
+        1.5
+      ],
+      "side": "B"
+    },
+    {
+      "ref": "SW1",
+      "pin": "1",
+      "net": "BTN_UP",
+      "cad_xy_mm": [
+        5.925,
+        12.45
+      ],
+      "size_mm": [
+        0.65,
+        0.7
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "SW1",
+      "pin": "1",
+      "net": "BTN_UP",
+      "cad_xy_mm": [
+        8.875,
+        12.45
+      ],
+      "size_mm": [
+        0.65,
+        0.7
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "SW1",
+      "pin": "2",
+      "net": "GND",
+      "cad_xy_mm": [
+        5.925,
+        10.55
+      ],
+      "size_mm": [
+        0.65,
+        0.7
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "SW1",
+      "pin": "2",
+      "net": "GND",
+      "cad_xy_mm": [
+        8.875,
+        10.55
+      ],
+      "size_mm": [
+        0.65,
+        0.7
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "SW2",
+      "pin": "1",
+      "net": "BTN_DOWN",
+      "cad_xy_mm": [
+        5.925,
+        5.45
+      ],
+      "size_mm": [
+        0.65,
+        0.7
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "SW2",
+      "pin": "1",
+      "net": "BTN_DOWN",
+      "cad_xy_mm": [
+        8.875,
+        5.45
+      ],
+      "size_mm": [
+        0.65,
+        0.7
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "SW2",
+      "pin": "2",
+      "net": "GND",
+      "cad_xy_mm": [
+        5.925,
+        3.55
+      ],
+      "size_mm": [
+        0.65,
+        0.7
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "SW2",
+      "pin": "2",
+      "net": "GND",
+      "cad_xy_mm": [
+        8.875,
+        3.55
+      ],
+      "size_mm": [
+        0.65,
+        0.7
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "SW3",
+      "pin": "1",
+      "net": "BTN_LEFT",
+      "cad_xy_mm": [
+        2.425,
+        8.95
+      ],
+      "size_mm": [
+        0.65,
+        0.7
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "SW3",
+      "pin": "1",
+      "net": "BTN_LEFT",
+      "cad_xy_mm": [
+        5.375,
+        8.95
+      ],
+      "size_mm": [
+        0.65,
+        0.7
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "SW3",
+      "pin": "2",
+      "net": "GND",
+      "cad_xy_mm": [
+        2.425,
+        7.05
+      ],
+      "size_mm": [
+        0.65,
+        0.7
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "SW3",
+      "pin": "2",
+      "net": "GND",
+      "cad_xy_mm": [
+        5.375,
+        7.05
+      ],
+      "size_mm": [
+        0.65,
+        0.7
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "SW4",
+      "pin": "1",
+      "net": "BTN_RIGHT",
+      "cad_xy_mm": [
+        9.425,
+        8.95
+      ],
+      "size_mm": [
+        0.65,
+        0.7
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "SW4",
+      "pin": "1",
+      "net": "BTN_RIGHT",
+      "cad_xy_mm": [
+        12.375,
+        8.95
+      ],
+      "size_mm": [
+        0.65,
+        0.7
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "SW4",
+      "pin": "2",
+      "net": "GND",
+      "cad_xy_mm": [
+        9.425,
+        7.05
+      ],
+      "size_mm": [
+        0.65,
+        0.7
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "SW4",
+      "pin": "2",
+      "net": "GND",
+      "cad_xy_mm": [
+        12.375,
+        7.05
+      ],
+      "size_mm": [
+        0.65,
+        0.7
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "SW5",
+      "pin": "1",
+      "net": "BTN_FIRE",
+      "cad_xy_mm": [
+        17.125,
+        11.75
+      ],
+      "size_mm": [
+        0.65,
+        0.7
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "SW5",
+      "pin": "1",
+      "net": "BTN_FIRE",
+      "cad_xy_mm": [
+        20.075,
+        11.75
+      ],
+      "size_mm": [
+        0.65,
+        0.7
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "SW5",
+      "pin": "2",
+      "net": "GND",
+      "cad_xy_mm": [
+        17.125,
+        9.85
+      ],
+      "size_mm": [
+        0.65,
+        0.7
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "SW5",
+      "pin": "2",
+      "net": "GND",
+      "cad_xy_mm": [
+        20.075,
+        9.85
+      ],
+      "size_mm": [
+        0.65,
+        0.7
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "SW6",
+      "pin": "1",
+      "net": "BTN_MENU",
+      "cad_xy_mm": [
+        16.525,
+        6.35
+      ],
+      "size_mm": [
+        0.65,
+        0.7
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "SW6",
+      "pin": "1",
+      "net": "BTN_MENU",
+      "cad_xy_mm": [
+        19.475,
+        6.35
+      ],
+      "size_mm": [
+        0.65,
+        0.7
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "SW6",
+      "pin": "2",
+      "net": "GND",
+      "cad_xy_mm": [
+        16.525,
+        4.45
+      ],
+      "size_mm": [
+        0.65,
+        0.7
+      ],
+      "side": "F"
+    },
+    {
+      "ref": "SW6",
+      "pin": "2",
+      "net": "GND",
+      "cad_xy_mm": [
+        19.475,
+        4.45
+      ],
+      "size_mm": [
+        0.65,
+        0.7
+      ],
+      "side": "F"
+    }
+  ],
+  "pogo_view": "Front projection CAD X decreases from pad1 to pad6; underside with USB at bottom shows pad1 at left."
+}

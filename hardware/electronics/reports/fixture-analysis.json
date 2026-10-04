@@ -1,0 +1,18 @@
+{
+  "nominal_enable_v": 3.1433,
+  "nominal_disable_v": 3.0829,
+  "conservative_threshold_ranges_v": {
+    "enable": [
+      3.0582,
+      3.23
+    ],
+    "disable": [
+      3.0003,
+      3.1721
+    ]
+  },
+  "sense_current_at_3v3_ua": 2.167,
+  "fixture_off_input_tolerance_v": 7,
+  "assumptions": "1% resistors; local 3.3V +/-5%; reference +/-1% allowance for initial error/drift/current over -40..85C; comparator +/-8mV offset plus 2..17mV internal hysteresis; +/-20nA input bias is a bench allowance (only typical 2pA specified); disable output 0..0.35V allowance (datasheet limit tested at 5V). Arithmetic bounds, not guaranteed thresholds or simulation.",
+  "bench_gate": "Confirm thresholds, hysteresis, both UART directions, power-off leakage and brownout with the selected adapter and buffer."
+}

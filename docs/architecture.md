@@ -4,21 +4,22 @@ The implemented software includes a **CAD generation pipeline** and a **Spectrum
 
 ## Product structure
 
-The diagram describes the intended connections. Component envelopes, access geometry and bench firmware bindings exist. A schematic, routed carrier and physical connection evidence remain open.
+The diagram describes the connections in the electrical study. Carrier and fixture schematics now match the bench firmware bindings. Routing and physical connection evidence remain open.
 
 ```mermaid
 flowchart LR
-    USB[Micro-B 5 V input] --> Power[Proposed 3.3 V power circuit]
+    USB[Micro-B qualified 5 V input] --> Power[TLV75733 3.3 V LDO: thermal gate open]
     Power --> ESP[ESP32-WROOM-32E-N4]
     Power --> LCD[Waveshare GC9107 LCD]
-    Buttons[Six switches] -->|Bench GPIO binding| ESP
+    Buttons[Six TE switches] -->|Checked GPIO binding| ESP
     ESP -->|SPI and control signals| LCD
     Flash[Module flash: ROM and one snapshot] --- ESP
     Fixture[External USB-UART fixture] <-->|TX / RX / EN / BOOT| ESP
-    Fixture --- Pads[GND and 3V3 pad policy pending]
+    ESP -->|High impedance 3V3 sensing| Fixture
+    Local[Fixture local regulated 3.3 V] --> Fixture
 ```
 
-Micro-B supplies power only. An external UART fixture handles programming. The selected ESP32 module contains flash; the separate flash box shows its logical use, not an added component. The enclosure provides underside access to fixture pads. Fixture power behavior is D-007. Radios remain disabled under CON-005.
+Micro-B supplies the handheld only. The manual UART fixture buffers both directions and receives independent local power; the device's 3V3 pogo pad is sense only. The selected ESP32 module contains flash; the separate flash box shows its logical use. The enclosure provides underside access. D-007 is selected for this study, with bench validation open. Radios remain disabled under CON-005.
 
 ## Mechanical structure
 

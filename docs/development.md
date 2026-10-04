@@ -1,6 +1,6 @@
 # Development and artifact guide
 
-The workflow builds CAD/presentation files and the 48K bench firmware. The [firmware guide](../firmware/README.md) gives native CTest commands, pinned ESP-IDF setup, diagnostic/Dizzy builds and content preparation. There is no PCB tool project or continuous-integration service.
+The workflow builds CAD/presentation files, 48K bench firmware and the KiCad electrical study. The [firmware guide](../firmware/README.md) covers software builds. The [electrical guide](../hardware/electronics/README.md) covers circuits, BOMs, native checks and fit/thermal gates. There is no routed PCB or continuous-integration service.
 
 ## Repository map
 
@@ -8,6 +8,7 @@ The workflow builds CAD/presentation files and the 48K bench firmware. The [firm
 | --- | --- |
 | `README.md`, `docs/` | Project entry point, requirements, evidence and development guidance |
 | `firmware/` | Portable runtime, ESP32 driver, host runner, content tools and tests |
+| `hardware/electronics/` | KiCad carrier/fixture schematics, unrouted board, exact BOMs, generator, checks and previews |
 | `hardware/cad/README.md` | Original packaging notes and build instructions |
 | `hardware/cad/parameters.json` | Nominal selections, dimensions and assumptions |
 | `hardware/cad/scripts/build_freecad.py` | Native geometry, mechanical checks, STEP/STL and mesh manifest |

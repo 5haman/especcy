@@ -64,18 +64,18 @@ Level: **solution / mechanical**. Requirements describe the nominal model or an 
 
 ## Electrical and interface requirements
 
-Level: **solution / electrical**. The model provides envelopes and labels. It provides no netlist, PCB routing or proven circuit.
+Level: **solution / electrical**. U3 adds the checked circuit/netlist and unrouted placement in L10. Physical electrical operation and routing remain unproven.
 
 | ID | Status | Requirement | Source | Verification |
 | --- | --- | --- | --- | --- |
-| ELE-001 | E | The carrier design shall provide a 3.3 V supply using the reserved regulator and supporting power components. | L1 line 41; L2 line 29; L3 lines 224–228 | V-005; exact circuit and current budget await D-002 |
-| ELE-002 | E | The underside programming interface shall expose GND, 3V3, TX, RX, EN and BOOT for the external UART programmer. | L1 line 42; L2 line 30; L3 lines 207–208 | V-006; pad labels do not assign actual nets |
-| ELE-003 | E | The selected display shall use its eight connections: VCC, GND, DIN, CLK, CS, DC, RST and BL, with 3.3 V supply and logic. | L1 lines 33, 37; L2 lines 21, 27; W1, W2 resolve the named product interface | V-005, V-007; WROOM GPIO allocation awaits DEC-001 |
+| ELE-001 | E | The carrier design shall provide a 3.3 V supply using the reserved regulator and supporting power components. | L1 line 41; L2 line 29; L3 lines 224–228 | V-005/V-017; circuit/BOM selected in L10, load/thermal/protection gate open |
+| ELE-002 | E | The underside programming interface shall expose GND, 3V3, TX, RX, EN and BOOT for the external UART programmer. | L1 line 42; L2 line 30; L3 lines 207–208 | V-006/V-017; U3/L10 define numbered nets and sense-only 3V3; physical gate open |
+| ELE-003 | E | The selected display shall use its eight connections: VCC, GND, DIN, CLK, CS, DC, RST and BL, with 3.3 V supply and logic. | L1 lines 33, 37; L2 lines 21, 27; W1, W2 resolve the named product interface | V-005/V-007/V-017; GPIO/netlist parity checked in L10; actual pads/wiring open |
 | ELE-004 | C | The carrier's reset and boot-strapping design shall support both program execution and entry to the ESP32 UART download mode. | Derived from USR-003 and ELE-002; W4 and W6 describe the required chip behavior | V-006; D-007, DEC-001, DEC-005 |
 
 ## Runtime behavior
 
-Level: **solution / functional**. These statements describe intended future firmware; none is implemented in this repository.
+Level: **solution / functional**. U2 implements the selected runtime in L9; physical acceptance remains open.
 
 | ID | Status | Requirement | Source | Verification |
 | --- | --- | --- | --- | --- |

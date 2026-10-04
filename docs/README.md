@@ -1,8 +1,8 @@
 # Documentation suite
 
-This suite describes Especcy's Speccy micro packaging study and its 48K Dizzy bench firmware. The original review was authored on **2026-10-03** against `13053ce`; U2's implementation evidence is recorded separately from that CAD baseline.
+This suite describes Especcy's packaging study, 48K Dizzy bench firmware and electrical placement study. The original review was authored on **2026-10-03** against `13053ce`; U2's firmware and U3's **2026-10-04** electrical evidence are recorded separately from that CAD baseline.
 
-The authoring mode is **mixed**: extract constraints, research integration facts and review requirements. Business intent remains inferred. U2 approves a bounded firmware phase; it does not approve the full product catalogue or physical prototype.
+The authoring mode is **mixed**: extract constraints, research integration facts and review requirements. Business intent remains inferred. U2 approves the firmware phase; U3 approves the electrical study. Neither approves the full product catalogue or physical prototype.
 
 ## Documents
 
@@ -21,6 +21,7 @@ The authoring mode is **mixed**: extract constraints, research integration facts
 | [Risks](risks.md) | What could prevent a working prototype, and what evidence would reduce that uncertainty? |
 | [Development guide](development.md) | How are artifacts rebuilt, checked and updated? |
 | [Firmware guide](../firmware/README.md) | How are native checks, content preparation, ESP32 builds and bench checks run? |
+| [Electrical guide](../hardware/electronics/README.md) | How are KiCad circuits, BOMs, placement, programming and fit/thermal gates reviewed and reproduced? |
 | [Roadmap](roadmap.md) | Which phase is implemented, and what evidence closes the next gate? |
 | [Glossary](glossary.md) | What do the domain terms and abbreviations mean? |
 
@@ -35,12 +36,12 @@ The authoring mode is **mixed**: extract constraints, research integration facts
 
 **Extracted** means the obligation already appears in the supplied repository. **Candidate** means it is inferred or proposed and needs confirmation. **Observed** describes implementation or a test result; it does not grant product approval. An extracted requirement can still be unimplemented.
 
-Sources L1–L9, W1–W11 and U1/U2 are defined in [research](research.md). Requirement IDs remain stable. Verification scenarios use V-IDs, current decisions use D-IDs, later decisions use DEC-IDs, review findings use F-IDs, and risks use R-IDs.
+Sources L1–L10, W1–W22 and U1–U3 are defined in [research](research.md). Requirement IDs remain stable. Verification scenarios use V-IDs, current decisions use D-IDs, later decisions use DEC-IDs, review findings use F-IDs, and risks use R-IDs.
 
 The [requirements catalogue](requirements.md) holds obligations. Other documents explain or map them. Conflicting evidence remains visible until a decision resolves it. No commercial target, schedule, owner, test threshold or legal entitlement is assumed.
 
 ## Review boundary
 
-The original baseline contains CAD scripts, parameters, models, renders and stored reports. The next phase adds firmware, native tests and two successful ESP32 content builds. No electronics project, routed carrier, CI service or physical test record is present. Safari research, pinned source inspection and local builds are separate evidence types; software checks do not test physical products.
+The original baseline contains CAD scripts, parameters, models, renders and stored reports. Later phases add firmware, native tests, two successful ESP32 content builds and the KiCad electrical/placement study. No routed carrier, CI service or physical test record is present. Safari research, native checks and local builds are separate evidence types; static checks do not test physical products.
 
 This is a complete documentation suite for the available evidence. It is not a claim that delivery requirements, physical feasibility or stakeholder acceptance are complete.

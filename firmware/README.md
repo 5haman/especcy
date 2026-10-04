@@ -133,8 +133,11 @@ Use `-B build-dizzy` for the game. Exit the monitor with Ctrl+]. If the adapter
 does not control reset/boot, hold GPIO0 low, pulse EN low then high, start the
 flash command, and release GPIO0 after connection. UART0 device TX is GPIO1 and
 device RX is GPIO3; cross them to adapter RX/TX with 3.3 V logic and common ground.
-The final underside fixture still needs a reviewed power/reset circuit and pad
-orientation. Do not infer that circuit from the CAD labels.
+The [electrical handoff](../hardware/electronics/README.md) now defines the
+numbered underside interface and manual BOOT/RESET reference circuit. Pogo
+3V3 is sense only; the fixture has independent local power and gated UART in
+both directions. Use esptool without automatic reset for that fixture. Probe
+mechanics and powered/unpowered, flash and recovery cases remain untested.
 
 Bad or missing content fails the build. Invalid embedded content stops emulation,
 logs the reason and shows `CONTENT ERROR` when the display is available. Display

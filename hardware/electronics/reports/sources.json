@@ -1,0 +1,94 @@
+{
+  "date": "2026-10-04",
+  "access": "Safari MCP page navigation/fetch, then local PDF text and drawing inspection; no full PDFs redistributed",
+  "sources": [
+    {
+      "id": "W12",
+      "manufacturer": "Texas Instruments",
+      "url": "https://www.ti.com/lit/ds/symlink/tlv757p.pdf",
+      "sha256": "84930bb4785ab3ddf29a6d1731a50c9bd37abeb9cbb91db86d476a9ff54033f0",
+      "bytes": 2856002,
+      "verified": "SBVS322C; DBV pinout, input/capacitors, thermal table and 125C recommended junction limit."
+    },
+    {
+      "id": "W13",
+      "manufacturer": "TE Connectivity",
+      "url": "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=2337228&DocType=Customer%20Drawing&DocLang=English&DocFormat=pdf&PartCntxt=2337228-2",
+      "sha256": "f3ab0d4e4fd6df65266d6b065eb32994f51e632f34abf2c4303f38d94d4ecd25",
+      "bytes": 204140,
+      "verified": "C-2337228 rev B, 10Apr2019; 2337228-2/USLPT3026EL2TR, pad/contact grouping, general tolerances, pressing tip and travel."
+    },
+    {
+      "id": "W14",
+      "manufacturer": "GCT",
+      "url": "https://gct.co/download?type=PDFDrawing&name=USB3076.pdf",
+      "sha256": "da6207488bdb1d9221d0bb4f51852dcd96b4541ecc1152732ac81e5d36a0afce",
+      "bytes": 164071,
+      "verified": "USB3076 drawing rev C, 17Jul2023; body, PCB-edge datum, shell stakes and 1.8A power contacts."
+    },
+    {
+      "id": "W15",
+      "manufacturer": "Waveshare",
+      "url": "https://files.waveshare.com/wiki/0.85inch-LCD-Module/0.85inch-OLED-Module-Schematic.pdf",
+      "sha256": "8bbee814fec8289bb8f7b8b1d4b52d4248c79a49a3b42215861774b8530e87ef",
+      "bytes": 126767,
+      "verified": "Manufacturer module schematic; eight-pin order, RT9193 regulator, BL-to-8050 transistor through 1k. Filename says OLED; circuit is linked by the LCD wiki."
+    },
+    {
+      "id": "W16",
+      "manufacturer": "Bourns",
+      "url": "https://www.bourns.com/docs/product-datasheets/mf-psmf.pdf",
+      "sha256": "8169931cf315787976c52f4531ac4db63af171ab19083f2d8bf5f8597d5fbf63",
+      "bytes": 753970,
+      "verified": "MF-PSMF075X hold/trip ratings, thermal derating, max 2.30 x 1.50 x 1.25mm envelope."
+    },
+    {
+      "id": "W17",
+      "manufacturer": "Bourns",
+      "url": "https://www.bourns.com/docs/product-datasheets/cdsod323-txxc.pdf",
+      "sha256": "bc389a5990c14e49301f868facfdcea6b0135907fbb2109372f256c8b2702248",
+      "bytes": 413287,
+      "verified": "CDSOD323-T05C 5V working peak, 6V breakdown minimum, 9.8V maximum clamp at 1A, SOD323 dimensions. Not LDO overvoltage protection."
+    },
+    {
+      "id": "W18",
+      "manufacturer": "Texas Instruments",
+      "url": "https://www.ti.com/lit/ds/symlink/tlv7041.pdf",
+      "sha256": "03c6901d3923c547a7d2b0901f5fbb7229ea9187138d8cabaa8518c81f80e397",
+      "bytes": 4353793,
+      "verified": "SLVSE13J; TLV7041DBV pinout, open drain, internal hysteresis, 7V input tolerance with VCC=0, typical bias and offset."
+    },
+    {
+      "id": "W19",
+      "manufacturer": "Texas Instruments",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lvc2g125.pdf",
+      "sha256": "15dab14095892f561bc7407dde6c7fb2fb75d92c6bdafc34e949e5dca1fed340",
+      "bytes": 813455,
+      "verified": "Two 3-state UART directions, DCU package/pin mapping, OE pull-up, Ioff and 3.3V logic thresholds."
+    },
+    {
+      "id": "W20",
+      "manufacturer": "Texas Instruments",
+      "url": "https://www.ti.com/lit/ds/symlink/lm4040.pdf",
+      "sha256": "f43b6b6d3ecd51c8c90b70a7c4630c7e3140822b0073953ed2459df81b251c1c",
+      "bytes": 1882717,
+      "verified": "SLOS456Q; LM4040A20IDBZR 2.048V selection, cathode/anode pinout, initial tolerance, bias and drift."
+    },
+    {
+      "id": "W21",
+      "manufacturer": "Espressif",
+      "url": "https://documentation.espressif.com/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf",
+      "sha256": "4c7a345d1c1bfec34c38665639e39a7f43b79a35a12f6adcc2c7c0f83850f8b8",
+      "bytes": 1230114,
+      "verified": "v2.1; N4 ordering, 18 x 25.5 x 3.1 envelope, pin table, straps and 1ms hold interval."
+    },
+    {
+      "id": "W22",
+      "manufacturer": "Murata (sheet mirrored by Octopart)",
+      "url": "https://datasheet.octopart.com/GRM188R61A106KE69J-Murata-datasheet-182088559.pdf",
+      "sha256": "209bd8ebf94a503dbcd492f68063889feb69c4dd5bf3ece77f4964266ee44910",
+      "bytes": 3281281,
+      "verified": "GRM188R61A106KE69 D/J; 10uF +/-10%, 10V X5R, 1.6/0.8/0.8mm each +/-0.15mm. Selected-part DC-bias qualification remains open; direct Murata product/PDF endpoints returned not found."
+    }
+  ]
+}

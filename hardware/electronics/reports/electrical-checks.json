@@ -1,0 +1,57 @@
+{
+  "status": "pass",
+  "checks": [
+    "carrier: native netlist, pin/NC/MPN/BOM parity, zero ERC violations and disabled rules",
+    "fixture: native netlist, pin/NC/MPN/BOM parity, zero ERC violations and disabled rules",
+    "Three intentional GPIO/LCD/adapter-power miswires rejected"
+  ],
+  "fabrication_ready": false,
+  "firmware": {
+    "buttons": {
+      "Right": 33,
+      "Left": 32,
+      "Down": 27,
+      "Up": 26,
+      "Fire": 13,
+      "Menu": 14
+    },
+    "lcd": {
+      "LCD_BL": 25,
+      "LCD_CLK": 18,
+      "LCD_CS": 21,
+      "LCD_DC": 22,
+      "LCD_DIN": 23,
+      "LCD_RST": 19
+    }
+  },
+  "drc": {
+    "placement_conflicts": [
+      {
+        "description": "PTH inside courtyard",
+        "items": [
+          {
+            "description": "PTH pad SH [/GND] of J1",
+            "pos": {
+              "x": 8.775,
+              "y": 34.95
+            },
+            "uuid": "347c5884-3d3d-4fda-8b9a-48129ed6db36"
+          },
+          {
+            "description": "Footprint SW2",
+            "pos": {
+              "x": 7.4,
+              "y": 33.5
+            },
+            "uuid": "7d5b8aef-435e-4d8f-8111-b1e8ebf3d1e1"
+          }
+        ],
+        "severity": "error",
+        "type": "pth_inside_courtyard"
+      }
+    ],
+    "unrouted_connections": 70,
+    "schematic_parity_issues": 0,
+    "disposition": "USB shell stake / Down switch fit gate remains OPEN. Unconnected items are expected on this unrouted board. No fabrication release."
+  }
+}
