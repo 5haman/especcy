@@ -8,6 +8,7 @@ The authoring mode is **mixed**: extract constraints, research integration facts
 
 | Document | What it answers |
 | --- | --- |
+| [Product prospectus (PDF)](prospectus/speccy-micro-prospectus.pdf) | What does the concept look like, how is it designed, and what is its prototype status? [Preview and source](prospectus/README.md). |
 | [Product brief](product-brief.md) | What is this product concept, who would use it, and what is in scope? |
 | [Research and sources](research.md) | What evidence supports the design, and what remains unverified? |
 | [Requirements](requirements.md) | What obligations are extracted, proposed or blocked by decisions? |

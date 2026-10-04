@@ -23,6 +23,7 @@ The compact stack assumes removal of the LCD's MX1.25 connector and replacement 
 
 ## Start here
 
+- [Product prospectus (PDF)](docs/prospectus/speccy-micro-prospectus.pdf): an eight-page visual introduction with CAD renders, specifications and prototype status; [preview and rebuild source](docs/prospectus/README.md).
 - [Documentation index](docs/README.md): the full suite and reading paths.
 - [Firmware guide](firmware/README.md): native checks, diagnostic/Dizzy builds, content preparation, wiring and bench acceptance.
 - [Electrical guide](hardware/electronics/README.md): KiCad files, pinouts, exact BOMs, reproduction, fit/thermal findings and [previews](hardware/electronics/previews/index.html).

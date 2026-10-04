@@ -1,0 +1,30 @@
+{
+  "file": "speccy-micro-prospectus.pdf",
+  "pages": 8,
+  "page_size_pt": [
+    960,
+    600
+  ],
+  "chapter_bookmarks": 8,
+  "internal_links": 67,
+  "embedded_fonts": [
+    "AAAAAA+Arial-BoldMT",
+    "AAAAAA+ArialMT",
+    "AAAAAA+DINAlternate-Bold"
+  ],
+  "selectable_text": true,
+  "text_within_page": true,
+  "text_box_overlaps": [],
+  "required_claims_present": true,
+  "bytes": 6714340,
+  "sha256": "2674d266fdf80910191a47444be2ca2daf5936e4493d0697cce19e5017c5acd6",
+  "source_model_sha256": "c99df1a0106a6bfc98a33bacde89c7f2e505b49ae012478bd2334ec26ecd5d7b",
+  "photoreal_assets": {
+    "hero": "b4c3c2b5e3e103510e40db666847341d9be546d6c76ac7374c0e58d5e91e4f44",
+    "front": "4d4395980006f5cf1125f64e014c11d2821d1a6d8c0503bf88c32073ba2a2f75",
+    "exploded": "c82097c1181e43ed0e432d7ef8e485188d6b05a5bf5e9ec1eb7137a6610f34ce",
+    "back": "77d84e3adf0bf29f70dd7dd9e23ab120486383e40b013500d280a8505bfb6d5e"
+  },
+  "visualization_mode": "AI-enhanced CAD-based concept",
+  "photoreal_images_verified_in_pdf": true
+}

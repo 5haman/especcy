@@ -1,0 +1,88 @@
+{
+  "source": "hardware/cad/models/speccy_micro.blend",
+  "geometry_changed": false,
+  "views": {
+    "hero": {
+      "file": "assets/hero.png",
+      "width": 1600,
+      "height": 1800,
+      "scene": "01 / Assembled",
+      "anchors": {}
+    },
+    "front": {
+      "file": "assets/front.png",
+      "width": 1400,
+      "height": 1800,
+      "scene": "01 / Assembled",
+      "anchors": {
+        "Up": [
+          0.37142857909202576,
+          0.6630434989929199
+        ],
+        "Down": [
+          0.37142857909202576,
+          0.8152174204587936
+        ],
+        "Left": [
+          0.27360251545906067,
+          0.7391304671764374
+        ],
+        "Right": [
+          0.46925467252731323,
+          0.7391304671764374
+        ],
+        "Fire": [
+          0.6844720840454102,
+          0.6782608926296234
+        ],
+        "Menu": [
+          0.6677019000053406,
+          0.7956521958112717
+        ],
+        "Screen": [
+          0.5,
+          0.3250000476837158
+        ]
+      }
+    },
+    "exploded": {
+      "file": "assets/exploded.png",
+      "width": 1400,
+      "height": 2000,
+      "scene": "02 / Exploded",
+      "anchors": {
+        "Front shell": [
+          0.5415428876876831,
+          0.2506234645843506
+        ],
+        "Button plungers": [
+          0.47999584674835205,
+          0.40977656841278076
+        ],
+        "LCD": [
+          0.504284679889679,
+          0.4832560420036316
+        ],
+        "Carrier": [
+          0.6034952402114868,
+          0.5835796594619751
+        ],
+        "ESP32": [
+          0.6034952402114868,
+          0.6846748888492584
+        ],
+        "Rear shell": [
+          0.6377861499786377,
+          0.7811515480279922
+        ]
+      }
+    },
+    "back": {
+      "file": "assets/back.png",
+      "width": 1600,
+      "height": 1600,
+      "scene": "04 / Programming access",
+      "anchors": {}
+    }
+  }
+}
