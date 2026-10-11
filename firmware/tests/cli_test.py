@@ -2,9 +2,11 @@
 import hashlib
 import json
 from pathlib import Path
+import struct
 import subprocess
 import sys
 import tempfile
+import zlib
 
 exe, content, generator = sys.argv[1:]
 content = Path(content)
@@ -20,6 +22,17 @@ with tempfile.TemporaryDirectory() as td:
         assert 4 * 69888 <= metrics["emulated_cycles"] < 4 * 69888 + 128
         image = (td / "frame.ppm").read_bytes()
         assert image.startswith(b"P6\n128 128\n255\n") and len(image) == 15 + 128 * 128 * 3
+    converter = [sys.executable, str(Path(generator).with_name("ppm_to_png.py"))]
+    assert subprocess.run(converter + [str(td / "frame.ppm"), str(td / "frame.png"), "--scale", "2"]).returncode == 0
+    png = (td / "frame.png").read_bytes()
+    assert png.startswith(b"\x89PNG\r\n\x1a\n") and struct.unpack(">II", png[16:24]) == (256, 256)
+    raw = zlib.decompress(png[41:41 + struct.unpack(">I", png[33:37])[0]])
+    source = image[15:]
+    for y in range(256):
+        row = source[(y // 2) * 384:(y // 2 + 1) * 384]
+        assert raw[y * 769:(y + 1) * 769] == b"\0" + b"".join(row[x:x + 3] * 2 for x in range(0, 384, 3))
+    (td / "short.ppm").write_bytes(image[:-1])
+    assert subprocess.run(converter + [str(td / "short.ppm"), str(td / "short.png")], capture_output=True).returncode != 0
     for args in (["--frames", "-1"], ["--frames", "1x"], ["--buttons", "32"], ["--frames", "1000001"],
                  ["--unknown", "x"], ["--frames"], ["--save-snapshot"]):
         bad = subprocess.run(base + args, capture_output=True, text=True)
@@ -47,4 +60,4 @@ with tempfile.TemporaryDirectory() as td:
     assert subprocess.run(pack + ["--mode", "dizzy", "--rom", str(content / "spectrum48.rom"),
         "--snapshot", str(content / "game48.sna")], capture_output=True).returncode == 0
     assert json.loads((td / "pack/content.json").read_text())["mode"] == "dizzy"
-print("PASS: CLI images/metrics, all five inputs, opposing directions, invalid arguments/content, asset packaging")
+print("PASS: CLI images/metrics, PNG conversion, all five inputs, opposing directions, invalid arguments/content, asset packaging")

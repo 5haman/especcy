@@ -85,7 +85,7 @@ extern "C" void app_main() {
         const auto now = esp_timer_get_time();
         if (now > next_tick) {
             ++overruns;
-            // ponytail: bounded catch-up; preserve CPU cycles and report slow hardware instead of skipping game frames.
+            // Bounded catch-up: preserve CPU cycles and report slow hardware instead of skipping game frames.
             if (now-next_tick >= speccy::FRAME_US) next_tick = now;
         }
         if (now-report >= 5000000) {

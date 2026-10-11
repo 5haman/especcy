@@ -119,7 +119,7 @@ uint8_t Spectrum48::inPort(uint16_t port) {
         return value;
     }
     if ((port & 0xff) == 0x1f) return joystick_;
-    // ponytail: no floating-bus/raster-effect compatibility claim; add with a workload that needs it.
+    // Unattached ports read 0xff. Floating-bus emulation waits for a workload that needs it.
     return 0xff;
 }
 void Spectrum48::outPort(uint16_t port, uint8_t value) {
