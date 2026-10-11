@@ -296,9 +296,9 @@ for item in items:
     if obj.Shape.isNull() or not obj.Shape.isValid() or obj.Shape.Volume <= 0:
         checks['invalid_solids'].append(obj.Name)
 primary = [it['obj'] for it in items if it['category'] in ('hardware', 'case')]
+# The case halves stay in the pairwise check; touching faces have no common volume.
 contact_pairs = {frozenset(('ESPShield', 'ESPSubstrate')),
-                 frozenset(('LCDPCB', 'LCDPanel')),
-                 frozenset(('CaseBase', 'CaseLid'))}
+                 frozenset(('LCDPCB', 'LCDPanel'))}
 for i, a in enumerate(primary):
     for b in primary[i + 1:]:
         if frozenset((a.Name, b.Name)) in contact_pairs:
