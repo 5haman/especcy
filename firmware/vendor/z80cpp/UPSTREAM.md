@@ -12,6 +12,6 @@ Z80Core GPLv3 text. This dependency is also in ESPectrum's source lineage.
 The only local core change is the marked read-only `getPrefixOpcode()` accessor
 in `z80.h`, used to capture a snapshot between complete instructions.
 
-Especcy's portable runtime and firmware integration use GPL-3.0. This does not
-select a license for the pre-existing CAD or documentation, or grant permission
-to distribute a Spectrum ROM or Dizzy snapshot. ESP-IDF carries its own notices.
+Especcy's portable runtime and firmware integration use GPL-3.0. This grants no
+permission to distribute a Spectrum ROM or Dizzy snapshot. ESP-IDF carries its
+own notices.

@@ -24,6 +24,6 @@ and the local nominal switch/USB STEP models are not manufacturer CAD models.
 
 Manufacturer documents remain copyrighted by their respective owners. They
 were consulted, not redistributed. Part selections and sources are in the
-BOMs and reports/sources.json. No endorsement is implied. The original
-project's licensing decision remains D-013; this notice does not assign a
-license to all original CAD, scripts or documentation.
+BOMs and reports/sources.json. No endorsement is implied. Other
+project-created files here use CERN-OHL-S-2.0 (design files) or GPL-3.0
+(Python scripts); the root README maps every path.
