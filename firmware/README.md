@@ -15,15 +15,17 @@ cmake -S firmware -B firmware/build-host -DSPECCY_HOST=ON -DCMAKE_BUILD_TYPE=Deb
 cmake --build firmware/build-host
 ctest --test-dir firmware/build-host --output-on-failure
 firmware/build-host/speccy-host --rom firmware/build-host/content/spectrum48.rom --snapshot firmware/build-host/content/game48.sna --frames 50 --buttons 9 --output firmware/build-host/frame.ppm
+python3 firmware/tools/ppm_to_png.py firmware/build-host/frame.ppm firmware/build-host/frame.png --scale 4
 ```
 
 Address and undefined-behavior sanitizers are enabled by default. The three
 CTest suites cover loading and capture, registers, bus contention, interrupts,
 frame timing, pixels and FLASH, controls/menu transitions, CLI errors, content
-packaging and offline conversion. These tests need no commercial assets.
+packaging, offline conversion and PNG export. These tests need no commercial assets.
 `-DSPECCY_SANITIZE=OFF` is available for compilers without sanitizer support.
 
-The host writes a 128 × 128 RGB PPM and prints JSON metrics. `--frames` counts
+The host writes a 128 × 128 RGB PPM and prints JSON metrics. `ppm_to_png.py`
+converts the frame to PNG and can scale it by whole pixels. `--frames` counts
 emulated frames, without wall-clock pacing. `--buttons` holds a Kempston mask:
 Right=1, Left=2, Down=4, Up=8, Fire=16. Opposing directions cancel independently;
 diagonal directions and Fire can remain held together.
@@ -184,7 +186,7 @@ At the bench, check in this order:
 5. Check cold boot, power removal, content error and interrupted-flash recovery
    through the intended fixture. Record sample revisions and unresolved failures.
 
-The hardware gate is Beads `op-se7.2`. Physical evidence is still needed for
+The hardware gate is in the [roadmap](../docs/roadmap.md). Physical evidence is still needed for
 timing, memory headroom, LCD behavior, action controls, power, heat and assembly.
 There is no floating-bus, raster-effect, tape, sound or 128K compatibility claim.
 
@@ -206,5 +208,6 @@ heap, the DMA allocation or real-time performance.
 New firmware code uses [GPL-3.0](LICENSE). The pinned Z80 core and its single
 local accessor change are described in [UPSTREAM.md](vendor/z80cpp/UPSTREAM.md).
 The manufacturer's driver permission notice is retained in
-[NOTICE](vendor/waveshare/NOTICE). This selects no license for the pre-existing
-CAD or documentation and grants no ROM/game redistribution permission.
+[NOTICE](vendor/waveshare/NOTICE). Hardware files and documentation elsewhere in
+the repository use CERN-OHL-S-2.0 and CC BY-SA 4.0; the [root README](../README.md#license)
+maps each path. No ROM or game redistribution permission is granted.

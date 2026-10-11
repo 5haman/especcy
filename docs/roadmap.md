@@ -1,29 +1,29 @@
 # Development roadmap
 
-U1 authorized the documentation baseline. U2 authorized Spectrum 48K firmware for original Dizzy. U3 authorized the electrical schematic and placement study with an LDO thermal gate and manual programming fixture. The broader product stages below remain proposals without assigned owners, dates, budget or procurement authorization.
+U1 authorized the documentation baseline. U2 authorized Spectrum 48K firmware for original Dizzy. U3 authorized the electrical schematic and placement study with an LDO thermal gate and manual programming fixture. U4 authorized licensing and the public v1.0 release. The broader product stages below remain proposals without assigned owners, dates, budget or procurement authorization.
 
 The current baseline includes the checked packaging study, a host-tested runtime and successful ESP32 builds. The physical gate must close using hardware evidence, not a CAD pass or host benchmark.
 
-## Authorized firmware phase
+## Delivered phases
 
-| Beads item | Outcome | Current evidence |
+| Phase | Outcome | Evidence |
 | --- | --- | --- |
-| `op-se7` | Especcy roadmap | Open beyond this phase |
-| `op-se7.1` | 48K Dizzy firmware prepared for bench validation | Software outcome delivered; no physical readiness claim |
-| `op-se7.1.1` | Portable core/runtime, loader, display, controls and content tools | Three native test suites pass under ASan/UBSan; real Dizzy starts and walks/jumps; 15,000-frame host smoke check |
-| `op-se7.1.2` | ESP32 GPIO/GC9107 driver, pacing, logs and target builds | Diagnostic and Dizzy build on pinned IDF; content in flash; no Wi-Fi/Bluetooth/PSRAM components |
-| `op-se7.1.3` | Reproduction, evidence and bench handoff | [Firmware guide](../firmware/README.md), resolved scoped decisions and updated verification/traceability |
-| `op-se7.2` | Physical WROOM/LCD/Dizzy validation | Open: LCD/input/action tests, cadence and heap logs, power/heat, cold boot and interrupted-programming recovery |
+| Firmware (U2) | 48K Dizzy firmware prepared for bench validation | Software outcome delivered; no physical readiness claim |
+| Firmware core | Portable core/runtime, loader, display, controls and content tools | Three native test suites pass under ASan/UBSan; real Dizzy starts and walks/jumps; 15,000-frame host smoke check |
+| Firmware target | ESP32 GPIO/GC9107 driver, pacing, logs and target builds | Diagnostic and Dizzy build on pinned IDF; content in flash; no Wi-Fi/Bluetooth/PSRAM components |
+| Firmware handoff | Reproduction, evidence and bench handoff | [Firmware guide](../firmware/README.md), resolved scoped decisions and updated verification/traceability |
+| Electrical study (U3) | Exact BOMs, carrier/fixture circuits, native placement, reproduction and handoff | Delivered in [hardware/electronics](../hardware/electronics/README.md). Both schematics ERC-clean with all rules enabled; firmware/BOM/netlist and board parity pass; native STEP reopens; previews inspected |
+| Prospectus | Eight-page visual introduction | [Product prospectus](prospectus/README.md); concept visuals are labelled |
+| Publication (U4) | Licenses, history purge, reproducible CAD package and export checks, CI, portfolio README and public v1.0 release | [Publication checks](verification.md#publication-checks--2026-10-11); D-013 resolved; F-003 closed |
 
-The shared Operator Beads workspace tracks these items under `project:especcy`. The next gate depends on the prepared firmware milestone. It does not authorize part purchases, a carrier release or enclosure changes.
+## Open gate: hardware bench validation
 
-## Authorized electrical study
+| Scope | Evidence still needed |
+| --- | --- |
+| WROOM, LCD and Dizzy on a bench | LCD/input/action tests, cadence and heap logs, power/heat, cold boot and interrupted-programming recovery |
+| Electrical design findings | LDO/PPTC heat, protection/source range, switch-tip/height, USB stake/opening, LCD modification, probe reach and power/flash/recovery tests |
 
-| Beads item | Outcome | Current evidence |
-| --- | --- | --- |
-| `op-se7.3` | Electrical schematic and placement study | Delivered in [hardware/electronics](../hardware/electronics/README.md); physical and fabrication gates remain open |
-| `op-se7.3.1` | Exact BOMs, carrier/fixture circuits, native placement, reproduction and handoff | Both schematics ERC-clean with all rules enabled; firmware/BOM/netlist and board parity pass; native STEP reopens; Safari previews inspected |
-| `op-se7.2` | Existing physical gate, extended with design findings | Still open: LDO/PPTC heat, protection/source range, switch-tip/height, USB stake/opening, LCD modification, probe reach and power/flash/recovery tests |
+The gate depends on the prepared firmware and electrical study. It does not authorize part purchases, a carrier release or enclosure changes.
 
 The board is unrouted. DRC records one USB shell-stake/Down-switch courtyard conflict and 70 expected unconnected items, with zero schematic parity issues. No conflict is excluded. Exact part selections and conservative fit calculations do not qualify purchased parts. Preserve the enclosure and controls until a measured result supports an explicit changed choice.
 
@@ -51,9 +51,8 @@ Part measurement can begin before the entire firmware scope is resolved. Firmwar
 | Design power, boot/reset and the programming fixture | D-002/D-007 and DEC-001/DEC-005 | CON-004, ELE, USR-003 |
 | Route the carrier and revalidate the measured stack | Qualified parts and electrical design | MEC, QUA-001 |
 | Validate physical assembly, operation and recovery | Integrated prototype and selected criteria | QUA, V-004–V-010/V-015 |
-| Make export-report and archive generation reproducible | Separately authorized tooling task | CAD-002/CAD-003; F-003 |
 
-The earlier documentation outcome was tracked as epic `op-bih`, task `op-bih.1`. U2's software implementation is tracked separately above. The remaining product proposals are not delivery commitments.
+The remaining product proposals are not delivery commitments.
 
 ## Replanning rule
 

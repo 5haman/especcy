@@ -8,7 +8,7 @@ Review boundary: L1–L8, selected external sources W1–W7, and the new 38-item
 
 ## Literal ambiguity scan
 
-Before deeper analysis, the bundled `scan_weasel_words.py` scanned `hardware/cad/README.md` and `hardware/cad/parameters.json`. It reported one candidate in the README and none in the parameters.
+Before deeper analysis, the author's local `scan_weasel_words.py` tool (not part of this repository) scanned `hardware/cad/README.md` and `hardware/cad/parameters.json`. It reported one candidate in the README and none in the parameters.
 
 | Source | Exact match | Disposition |
 | --- | --- | --- |
@@ -22,11 +22,11 @@ These findings distinguish source/documentation defects from choices legitimatel
 
 | ID | Source or affected requirement | Exact wording or evidence | Characteristic and consequence | Correction or decision |
 | --- | --- | --- | --- | --- |
-| F-001 | L1 lines 4–5; CON-001, BR-001 | “the ESP32-WROOM-32E core discussed in this conversation” | Traceable/correct: the referenced conversation is not supplied, so original rationale and approval cannot be recovered from that citation | Preserve the named module, cite available files and label inferred purpose. D-001 resolves authority; no historical approval invented |
+| F-001 | L1 lines 4–5; CON-001, BR-001 | “the ESP32-WROOM-32E core discussed in this conversation” | Traceable/correct: the referenced conversation is not supplied, so original rationale and approval cannot be recovered from that citation | Preserve the named module, cite available files and label inferred purpose. D-001 resolves authority; no historical approval invented. Resolved 2026-10-11 under U4: L1 line 4 now names the module selected for this study, with line numbering unchanged |
 | F-002 | Whole requirement set; BR-001/BR-002 and all delivery candidates | No accountable requirement owner or acceptance authority is named in L1/L2 | Owned: the expanded catalogue cannot become an accepted delivery baseline without someone accountable for scope decisions | Catalogue declares “owner not supplied”; D-001 records the decision. This is not a demand for a personal name |
-| F-003 | L6 `export_checks.json`; L8 ZIP; CAD-002/CAD-003 evidence | Stored `"pass": true` export report and packaged outputs exist; no tracked script writes `export_checks.json` or produces the archive | Traceable/modifiable: the listed rebuild commands cannot reproduce all supplied evidence and packaging as a single documented pipeline | Development guide separates generated outputs from inherited reports/archive. Current STEP/STL/archive checks were run independently. Automating these steps is proposed follow-up |
+| F-003 | L6 `export_checks.json`; L8 ZIP; CAD-002/CAD-003 evidence | Stored `"pass": true` export report and packaged outputs exist; no tracked script writes `export_checks.json` or produces the archive | Traceable/modifiable: the listed rebuild commands cannot reproduce all supplied evidence and packaging as a single documented pipeline | Development guide separates generated outputs from inherited reports/archive. Current STEP/STL/archive checks were run independently. Resolved 2026-10-11 under U4: `check_exports.py` reproduces the stored report byte for byte, and `package.py` builds and verifies the archive |
 
-The collision exemption name mismatch described in [verification](verification.md) is a source-code observation. It does not produce a failing result for the current model and is not evidence of a present physical collision. It should be considered before changing contact-check policy.
+The collision exemption name mismatch described in [verification](verification.md) was a source-code observation. It never produced a failing result and was not evidence of a physical collision. On 2026-10-11 the dead entry was removed; the check result is unchanged.
 
 ## Requirement-level pending decisions
 

@@ -1,6 +1,6 @@
 # Decision register
 
-No accountable product acceptance owner was supplied. U2 authorizes firmware choices; U3 authorizes the electrical study recorded below. Remaining decisions retain **owner not supplied**; implementation evidence does not assign a person, deadline or product approval.
+No accountable product acceptance owner was supplied. U2 authorizes firmware choices; U3 authorizes the electrical study; U4 resolves repository licensing for publication. All three are recorded below. Remaining decisions retain **owner not supplied**; implementation evidence does not assign a person, deadline or product approval.
 
 ## Recorded design choices
 
@@ -51,7 +51,7 @@ The user authorized these choices through the accepted plan and implementation r
 | D-008 | Average each 2 × 2 source block to 128 × 96; center with 16 border-colored rows above/below; RGB565 single DMA buffer | Actual LCD orientation, palette, tearing and user assessment |
 | D-009 | 16 KiB ROM plus 49,179-byte 48K SNA compiled in mapped flash; restore a prepared Kempston starting state; replace by rebuild/UART reflash; no persistent progress | Z80 conversion and K selection occur offline only; fixture needs validation |
 | D-010 | Pace 69,888 T-states per 19,968 µs and transfer the LCD every second tick, about 50.08/25.04 Hz | This resolves cadence only. Duration, acceptable overruns/latency, temperature and usability limits still need a bench acceptance decision |
-| D-012 | GPLv3 core/integration is accepted; dependency notices and local content sources/hashes retained | Original CAD/docs license is D-013; ROM/game redistribution remains unresolved. Local downloads do not grant distribution rights |
+| D-012 | GPLv3 core/integration is accepted; dependency notices and local content sources/hashes retained | D-013 is resolved under U4; ROM/game redistribution remains unresolved, so no ROM or game is distributed. Local downloads do not grant distribution rights |
 | D-015 | Build rejects missing/invalid supported content; boot errors stop with UART reason and an LCD error when available; recovery is a complete UART reflash; power loss/restart restores the compiled SNA | Physical fault, interrupted-flash, cold-boot and power tests remain open |
 
 U2 selected DEC-001 for bench GPIOs; U3 now checks that allocation in the carrier. DEC-002 uses the standard 1 MiB factory app, flash-backed content and a build-time SHA256 manifest. DEC-003 uses independent 10 ms debounce without held-menu repeat. DEC-004 uses the manufacturer GC9107 sequence, X+2/Y+3 offsets and initially 20 MHz SPI. The exact bindings are in the [firmware guide](../firmware/README.md); none releases a PCB. U3 resolves the fixture policy below, with physical validation open.
@@ -68,6 +68,16 @@ The user selected an LDO with a thermal gate, manual BOOT/RESET, supplier-neutra
 | DEC-005 | Power/protection, 10 kΩ/1 µF EN, decoupling, boot straps and fixture reference circuit selected | LDO/PPTC thermal gate, TVS source-range/ESD qualification and routing remain open |
 
 The LDO's 1 A electrical rating does not establish continuous capability here. At the 560 mA supply-capability budget, 5 V yields 0.952 W loss. TI reference thermal boards do not represent this enclosure. The selected TVS has 5.0 V working peak, so the 5.25 V thermal sweep is outside its qualified input range. The switch-tip/height and USB stake findings in L10 must be resolved using samples or an explicit changed design choice; no geometry change is inferred.
+
+## U4 publication resolutions — 2026-10-11
+
+The owner selected these terms before public release on GitHub. L8 and the [verification record](verification.md#publication-checks--2026-10-11) hold the evidence.
+
+| ID | Selected outcome | Remaining boundary |
+| --- | --- | --- |
+| D-013 | Source code and scripts use GPL-3.0 (`LICENSE`). Hardware design files under `hardware/` use CERN-OHL-S-2.0 (`LICENSE-HARDWARE`). Documentation, Markdown and images use CC BY-SA 4.0 (`LICENSE-DOCS`). Third-party notices keep their own terms | ROM/game redistribution stays unresolved under D-012, and the repository distributes none. Manufacturer documents and images are linked, not redistributed. No endorsement or trademark permission is implied |
+
+Before the first push, the owner also approved removing the saved manufacturer outline and the duplicate CAD archive from history. `hardware/cad/scripts/package.py` now rebuilds the archive from committed files.
 
 ## Decisions to be taken during decomposition
 

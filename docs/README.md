@@ -1,6 +1,6 @@
 # Documentation suite
 
-This suite describes Especcy's packaging study, 48K Dizzy bench firmware and electrical placement study. The original review was authored on **2026-10-03** against `13053ce`; U2's firmware and U3's **2026-10-04** electrical evidence are recorded separately from that CAD baseline.
+This suite describes Especcy's packaging study, 48K Dizzy bench firmware and electrical placement study. The original review was authored on **2026-10-03** against the CAD baseline commit, now `411f6c6` after the pre-release history rewrites. U2's firmware, U3's **2026-10-04** electrical evidence and U4's **2026-10-11** publication checks are recorded separately from that baseline.
 
 The authoring mode is **mixed**: extract constraints, research integration facts and review requirements. Business intent remains inferred. U2 approves the firmware phase; U3 approves the electrical study. Neither approves the full product catalogue or physical prototype.
 
@@ -37,12 +37,12 @@ The authoring mode is **mixed**: extract constraints, research integration facts
 
 **Extracted** means the obligation already appears in the supplied repository. **Candidate** means it is inferred or proposed and needs confirmation. **Observed** describes implementation or a test result; it does not grant product approval. An extracted requirement can still be unimplemented.
 
-Sources L1–L10, W1–W22 and U1–U3 are defined in [research](research.md). Requirement IDs remain stable. Verification scenarios use V-IDs, current decisions use D-IDs, later decisions use DEC-IDs, review findings use F-IDs, and risks use R-IDs.
+Sources L1–L10, W1–W22 and U1–U4 are defined in [research](research.md). Requirement IDs remain stable. Verification scenarios use V-IDs, current decisions use D-IDs, later decisions use DEC-IDs, review findings use F-IDs, and risks use R-IDs.
 
 The [requirements catalogue](requirements.md) holds obligations. Other documents explain or map them. Conflicting evidence remains visible until a decision resolves it. No commercial target, schedule, owner, test threshold or legal entitlement is assumed.
 
 ## Review boundary
 
-The original baseline contains CAD scripts, parameters, models, renders and stored reports. Later phases add firmware, native tests, two successful ESP32 content builds and the KiCad electrical/placement study. No routed carrier, CI service or physical test record is present. Safari research, native checks and local builds are separate evidence types; static checks do not test physical products.
+The original baseline contains CAD scripts, parameters, models, renders and stored reports. Later phases add firmware, native tests, two successful ESP32 content builds and the KiCad electrical/placement study. Since U4, GitHub Actions runs the host tests, the ESP32 diagnostic build and the electrical, link and packaging checks. No routed carrier or physical test record is present. Safari research, native checks and local builds are separate evidence types; static checks do not test physical products.
 
 This is a complete documentation suite for the available evidence. It is not a claim that delivery requirements, physical feasibility or stakeholder acceptance are complete.

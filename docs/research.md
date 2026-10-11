@@ -2,15 +2,16 @@
 
 The selected module and LCD fit the recorded XY envelopes. External sources support their interface characteristics and identify integration work. They do not establish that the complete 12 mm assembly is electrically or physically feasible.
 
-Research date: **2026-10-03**. Original local baseline: **`13053ce`**. Web pages were read through Safari MCP; source checkouts and code packages used Git/package downloads. The firmware phase adds pinned sources and local execution evidence. Pages using `latest` remain mutable.
+Research date: **2026-10-03**. Original local baseline: **`411f6c6`**. Before the v1.0 release, history was rewritten to remove a manufacturer image and a duplicate archive and to use the owner's GitHub noreply address; the rest of the baseline content is unchanged. Web pages were read in Safari; source checkouts and code packages used Git/package downloads. The firmware phase adds pinned sources and local execution evidence. Pages using `latest` remain mutable.
 
 ## Local sources
 
 | ID | Source and exact scope | Evidence type |
 | --- | --- | --- |
-| U1 | User request in this session: “research, develop full docs and requirements suite and save to docs/ and README.md” | Authorization for documentation; no product approval inferred |
-| U2 | User requested the next phase, selected Dizzy instead of Jetpack, accepted the scoped plan and said “Implement the plan”; later requested “download from web” for local ROM/game checks | Authorization for the selected 48K firmware phase and local downloads; no procurement, manufacturing or redistribution permission inferred |
-| U3 | User requested the next phase, selected an LDO with a thermal gate, manual BOOT/RESET, supplier-neutral BOMs and no physical parts, then said “Implement the plan” | Authorization for carrier/fixture schematics, exact selections, unrouted placement and reproducible handoff; no enclosure changes, purchases or fabrication release |
+| U1 | Owner request, 2026-10-03: “research, develop full docs and requirements suite and save to docs/ and README.md” | Authorization for documentation; no product approval inferred |
+| U2 | Owner request, 2026-10-03: the next phase; selected Dizzy instead of Jetpack, accepted the scoped plan and said “Implement the plan”; later requested “download from web” for local ROM/game checks | Authorization for the selected 48K firmware phase and local downloads; no procurement, manufacturing or redistribution permission inferred |
+| U3 | Owner request, 2026-10-04: the next phase; selected an LDO with a thermal gate, manual BOOT/RESET, supplier-neutral BOMs and no physical parts, then said “Implement the plan” | Authorization for carrier/fixture schematics, exact selections, unrouted placement and reproducible handoff; no enclosure changes, purchases or fabrication release |
+| U4 | Owner request, 2026-10-11: “finish project and prepare to publish on github for portfolio”; selected GPL-3.0 for software, CERN-OHL-S-2.0 for hardware and CC BY-SA 4.0 for documentation, a pre-publication history purge of the manufacturer image and duplicate CAD archive, and a public repository with a v1.0 release | Authorization for D-013, publication tooling, CI and the public release; no part purchase, PCB routing, fabrication or physical acceptance |
 | L1 | [CAD README](../hardware/cad/README.md), lines 1–10 maturity; 26–42 components; 44–63 use and scope; 65–80 verification limits; 82–106 rebuilds | Original design narrative; its earlier “conversation” is unavailable |
 | L2 | [Parameters](../hardware/cad/parameters.json), lines 4–18 nominal values; 19–23 source claims; 25–35 assumptions | Recorded selections and estimates; not an electrical design |
 | L3 | [FreeCAD builder](../hardware/cad/scripts/build_freecad.py), lines 29–40 spreadsheet; 112–266 geometry; 267–276 design notes; 290–368 checks and exports | Implemented CAD behavior |
@@ -18,7 +19,7 @@ Research date: **2026-10-03**. Original local baseline: **`13053ce`**. Web pages
 | L5 | [Blender validator](../hardware/cad/scripts/validate_blender.py), lines 8–34 | Existing executable validation |
 | L6 | [Mechanical checks](../hardware/cad/models/mechanical_checks.json), [export checks](../hardware/cad/models/export_checks.json), [Blender checks](../hardware/cad/models/blender_checks.json) | Stored results; provenance and limits are described in verification |
 | L7 | [Mesh manifest](../hardware/cad/models/assembly_meshes.json), top-level `units`, `parameters`, `components` | 47 component meshes, names, categories and material labels |
-| L8 | [CAD archive](../hardware/cad/speccy_micro_package.zip), 27 entries; [saved outline](../hardware/cad/reference/waveshare_085_outline.png) | Packaged artifacts and inherited manufacturer reference image |
+| L8 | [CAD package builder](../hardware/cad/scripts/package.py); the original 27-entry archive and saved manufacturer outline were removed from history under U4 | Reproducible archive of the committed CAD files; the manufacturer outline is linked from L1, not redistributed |
 | L9 | [Firmware guide](../firmware/README.md), `firmware/common/`, `main/`, `host/`, `tools/` and `tests/` | Implemented 48K runtime and bench bindings; executed software evidence is in verification |
 | L10 | [Electrical guide](../hardware/electronics/README.md), KiCad projects, exact BOMs, native XML/STEP/SVG and [reports](../hardware/electronics/reports/electrical-checks.json) | 2026-10-04 circuit/placement implementation and executed static checks; no physical evidence |
 

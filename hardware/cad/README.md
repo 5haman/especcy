@@ -1,7 +1,7 @@
 # Speccy micro — compact ESP32 packaging study
 
 The modeled assembly measures **24 × 38 × 12 mm**, including the button caps.
-It uses the ESP32-WROOM-32E core discussed in this conversation on a custom
+It uses the ESP32-WROOM-32E module selected for this study on a custom
 carrier PCB, with a tiny display, six buttons, and a two-part case.
 It does not use the full DevKitC development board.
 
@@ -21,7 +21,7 @@ an electrically complete PCB design, or a case validated against purchased parts
 | `renders/*.png` | Presentation views and the illustrative 128 × 128 screen texture |
 | `models/mechanical_checks.json` | Native geometry checks and numerical clearances |
 | `parameters.json` | Nominal dimensions, component positions, source URLs, and assumptions |
-| `reference/waveshare_085_outline.png` | Manufacturer's LCD outline captured through Safari |
+| [Manufacturer LCD outline](https://www.waveshare.com/img/devkit/LCD/0.85inch-LCD-Module/0.85inch-LCD-Module-details-size.jpg) | Linked reference drawing; not redistributed here |
 
 ## Assembly and size
 
@@ -81,7 +81,7 @@ envelopes, not a completed electrical implementation.
 
 ## Rebuilding
 
-On this Mac:
+On macOS, with both applications installed in `/Applications`:
 
 ```sh
 QT_QPA_PLATFORM=offscreen /Applications/FreeCAD.app/Contents/Resources/bin/python -u hardware/cad/scripts/build_freecad.py
@@ -105,6 +105,17 @@ After rendering, check the saved Blender document with:
 ```sh
 /Applications/Blender.app/Contents/MacOS/Blender --background hardware/cad/models/speccy_micro.blend --python hardware/cad/scripts/validate_blender.py
 ```
+
+Then check the exported STEP and STL files, and build the downloadable package:
+
+```sh
+/Applications/FreeCAD.app/Contents/Resources/bin/python hardware/cad/scripts/check_exports.py
+python3 hardware/cad/scripts/package.py
+```
+
+`check_exports.py` rewrites `models/export_checks.json`. `package.py` writes a
+reproducible `dist/speccy_micro_package.zip` from the committed files in this
+folder and the three license files. Tagged GitHub releases attach that archive.
 
 ## Sources
 

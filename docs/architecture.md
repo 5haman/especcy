@@ -51,7 +51,7 @@ flowchart LR
 
 FreeCAD constructs the solids, validates them, exports print/exchange geometry and writes tessellated component meshes. Blender imports those meshes at a scale of `0.001`, adds presentation elements and saves the views. Its validator reopens the saved model and checks names, size, texture, previews and the GLB header.
 
-`export_checks.json` and the ZIP archive exist, but their generating commands are absent from the tracked scripts. Neither is an automatic output of the complete command sequence above. See F-003 and the [development guide](development.md).
+`check_exports.py` reads the exported STEP and STL files and rewrites `export_checks.json`. `package.py` builds the downloadable archive from committed files. Both run after the sequence above; see F-003 and the [development guide](development.md).
 
 ## Source authority and change coupling
 

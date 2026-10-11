@@ -33,10 +33,10 @@ This matrix maps every catalogue ID to upstream evidence, the current implementa
 | FW-004 | L1 56; L2 34; U2/L9 | SNA load and restart, offline game preparation; both target builds pass | V-009 | Physical startup and sustained Dizzy execution |
 | FW-005 | DAT-001/FW-004; U2/L9 | Build/loader rejection, atomic failed load, boot error stop and UART recovery instructions | V-009 | Physical error/power/interrupted-programming recovery |
 | DAT-001 | L1 56; L2 34; U2/L9 | Exact ROM/SNA symbols checked in mapped flash, within the factory app | V-009 | Physical provisioning and content replacement |
-| DAT-002 | DAT-001; W8–W11; L9 | Core/manufacturer notices, hashes and local asset sources recorded | V-016 | D-012 content distribution and D-013 original project terms |
+| DAT-002 | DAT-001; W8–W11; L9 | Core/manufacturer notices, hashes and local asset sources recorded | V-016 | D-012 content distribution; D-013 resolved under U4 |
 | CAD-001 | L1 16; L3 29–40, 112–176, 267–276 | FCStd construction and design notes | V-011 | Native reopen passed; interactive edits untested |
-| CAD-002 | L1 18–20; L3 exports; L4 scale/export | STEP, eight STLs and GLB exist | V-012 | STEP/STL checks passed; GLB header only, no independent viewer import |
-| CAD-003 | L1 67–70; L3 290–327 | Mechanical report and builder assertions | V-002, V-013 | Stored primary-collision pass; check exclusions remain |
+| CAD-002 | L1 18–20; L3 exports; L4 scale/export | STEP, eight STLs and GLB exist | V-012 | STEP/STL checks reproducible with `check_exports.py`; GLB header only, no independent viewer import |
+| CAD-003 | L1 67–70; L3 290–327 | Mechanical report and builder assertions | V-002, V-013 | Primary-collision pass reproduced on 2026-10-11; module and LCD contact exclusions remain |
 | CAD-004 | L1 17, 48–51, 72–74; L4/L5 | BLEND and four previews | V-014 | Existing validator passed |
 | CAD-005 | L1 72–73; L3/L4 | Manifest in mm; Blender import at 0.001 | V-012, V-014 | Source mapping and validator checked; presentation modifiers remain |
 | QUA-001 | L1 76–80; L2 28–29; L10 | Exact part selections and circuit/placement evidence | V-003, V-005, V-015, V-017 | Purchased measurements, fit/protection qualification and routed PCB |

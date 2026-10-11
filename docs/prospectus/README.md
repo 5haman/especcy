@@ -4,7 +4,7 @@
 
 A landscape, 16:10 product prospectus with photorealistic concept visuals based on the existing CAD, selectable text, embedded fonts, chapter bookmarks and internal navigation. The page numbers are links. The cover and closing page also have navigation buttons.
 
-The narrative follows the idea, scale, controls, picture, layers, system, recorded evidence and next prototype step. The built-in imagegen tool refined the CAD reference images with realistic plastic grain, LCD glass, metal details and studio lighting. These are concept visuals; the editable CAD remains the engineering reference. Screens retain the original illustrative artwork. No ROM, game screenshot or game content is included. Dimensions and hardware selections retain the existing product baseline; software/static evidence is distinguished from physical acceptance.
+The narrative follows the idea, scale, controls, picture, layers, system, recorded evidence and next prototype step. An AI image-editing model refined the CAD reference images with realistic plastic grain, LCD glass, metal details and studio lighting. These are concept visuals; the editable CAD remains the engineering reference. Screens retain the original illustrative artwork. No ROM, game screenshot or game content is included. Dimensions and hardware selections retain the existing product baseline; software/static evidence is distinguished from physical acceptance.
 
 | Photorealistic asset | View |
 | --- | --- |
@@ -50,4 +50,4 @@ This command rebuilds the CAD references, not the AI material/lighting edits. If
 | 7: recorded evidence and open tests | [Verification](../verification.md), [roadmap](../roadmap.md), [electrical guide](../../hardware/electronics/README.md) |
 | 8: next step and release limits | [Product brief](../product-brief.md), [decisions](../decisions.md) |
 
-The evidence page summarizes the recorded baseline; creating this PDF does not rerun firmware suites or qualify hardware. Distribution rights for the underlying CAD/documentation remain unresolved in D-013, and the prospectus grants no new license or release approval. The deliverable is tracked as `op-se7.4`; the photorealistic refresh is `op-se7.4.2`.
+The evidence page summarizes the recorded baseline; creating this PDF does not rerun firmware suites or qualify hardware. The prospectus, its images and this page use CC BY-SA 4.0 under D-013; the build scripts use GPL-3.0. Neither grants a product release approval.
