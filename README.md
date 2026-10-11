@@ -73,9 +73,11 @@ You need CMake, a C++14 compiler and Python 3. No ROM or game is needed: the bui
 cmake -S firmware -B firmware/build-host -DSPECCY_HOST=ON -DCMAKE_BUILD_TYPE=Debug
 cmake --build firmware/build-host
 ctest --test-dir firmware/build-host --output-on-failure
-firmware/build-host/speccy-host --rom firmware/build-host/content/spectrum48.rom \
-  --snapshot firmware/build-host/content/game48.sna --frames 50 --buttons 9 --output firmware/build-host/frame.ppm
-python3 firmware/tools/ppm_to_png.py firmware/build-host/frame.ppm firmware/build-host/frame.png --scale 4
+
+cd firmware/build-host
+./speccy-host --rom content/spectrum48.rom --snapshot content/game48.sna \
+  --frames 50 --buttons 9 --output frame.ppm
+python3 ../tools/ppm_to_png.py frame.ppm frame.png --scale 4
 ```
 
 <img src="docs/images/diagnostic-frame.png" alt="Emulator output: a diagnostic colour test card in a blue border" width="256" align="right">
